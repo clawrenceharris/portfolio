@@ -25,10 +25,12 @@ const ContactSection = () => {
       // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origi": "http://caleblharris.com",
       },
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
+
     const response = await fetch(endpoint, options);
     const resData = await response.json();
     console.log(resData);

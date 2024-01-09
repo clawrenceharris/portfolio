@@ -42,6 +42,7 @@ const ProjectsSection = () => {
               uniqueTags.add(item);
               return (
                 <ProjectTag
+                  key={item}
                   onClick={handleTagChange}
                   name={item}
                   isSelected={tag === item}
