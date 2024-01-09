@@ -4,7 +4,6 @@ import GithubIcon from "../../../public/github-icon.svg";
 import YoutubeIcon from "../../../public/youtube-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import colors, { blue, teal } from "tailwindcss/colors";
 
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -124,7 +123,7 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="border-gradient hover:bg-secondary-600 text-white font-medium py-2.5 px-5 rounded-full w-[300px] self-center"
+              className="border-gradient hover:opacity-80 text-white font-medium py-2.5 px-5 rounded-full w-full "
             >
               Send Message
             </button>

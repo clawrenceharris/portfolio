@@ -6,6 +6,7 @@ function Project() {
   const router = useRouter();
   const { id } = router.query;
   const project = projects.find((item) => item.id == id);
+
   if (!project) {
     return <></>;
   }
