@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-padding-top: 75px;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #121212;
+}
+button,
+span,
+div {
+  transition: 0.2s ease;
+}
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #121212;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px 30px;
+}
+
+.border-gradient {
+  background: linear-gradient(to right, #14b8a6, #3b82f6);
+  border: 1px solid transparent; /* Set the initial border color */
+}
+
+.border-gradient-hover:hover {
+  border: 1px solid #ff8a00; /* Change border color on hover */
+}
+
+h1 {
+  font-size: 230%;
+  font-weight: 500;
+}
