@@ -25,7 +25,7 @@ const ContactSection = () => {
       // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origi": "http://caleblharris.com",
+        "Access-Control-Allow-Origin": "http://caleblharris.com",
       },
       // Body of the request is the JSON data we created above.
       body: JSONdata,
