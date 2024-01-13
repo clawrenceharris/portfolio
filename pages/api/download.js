@@ -11,7 +11,7 @@ export default function handler(req, res) {
   // Set the response headers
   res.setHeader(
     "Content-Disposition",
-    'attachment; filename="CalebHarris.pdf"'
+    'attachment; filename="CalebHarrisResume.pdf"'
   );
   res.setHeader("Content-Type", "application/octet-stream");
   res.setHeader("Content-Length", fileContents.length);
