@@ -49,7 +49,7 @@ const ProjectsSection = () => {
                 />
               );
             }
-            return null; // Skip rendering if the category is a duplicate
+            return null; // Skip rendering if the tag is a duplicate
           });
         })}
       </div>
