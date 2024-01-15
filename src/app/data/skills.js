@@ -1,12 +1,12 @@
 export const skills = [
   {
     name: "React Native",
-    imgUrl: "https://i.ibb.co/pwYNPJg/structure.png",
+    imgUrl: "https://i.ibb.co/5K9yz4L/react-logo.png",
   },
 
   {
     name: "React",
-    imgUrl: "https://i.ibb.co/pwYNPJg/structure.png",
+    imgUrl: "https://i.ibb.co/5K9yz4L/react-logo.png",
   },
   {
     name: "HTML5",
