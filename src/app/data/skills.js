@@ -41,10 +41,10 @@ export const skills = [
     name: "TypeScript",
     imgUrl: "https://i.ibb.co/kKw3gzG/typescript.png",
   },
-  {
-    name: "Angular",
-    imgUrl: "https://i.ibb.co/KbDnK4h/5847ea22cef1014c0b5e4833.png",
-  },
+  // {
+  //   name: "Angular",
+  //   imgUrl: "https://i.ibb.co/KbDnK4h/5847ea22cef1014c0b5e4833.png",
+  // },
   {
     name: "Next.js",
     imgUrl: "https://i.ibb.co/QrhgVcR/nextjs-256x256.png",
