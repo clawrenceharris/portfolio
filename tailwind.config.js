@@ -1,5 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-import colors, { blue, teal } from "tailwindcss/colors";
+import colors, {
+  blue,
+  teal,
+  lightBlue,
+  purple,
+  cyan,
+} from "tailwindcss/colors";
 
 export const content = [
   "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,7 +23,7 @@ export const theme = {
     },
     colors: {
       ...colors,
-      primary: teal,
+      primary: cyan,
 
       secondary: blue,
     },

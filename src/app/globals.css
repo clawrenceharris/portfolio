@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.skill-circle {
+  transition: 0.5s ease;
+}
+.skill-circle:hover {
+  border: 2px solid #06b6d4; /* Set the initial border color */
+}
 html {
   scroll-padding-top: 75px;
 }
@@ -33,15 +39,46 @@ section {
 }
 
 .border-gradient {
-  background: linear-gradient(to right, #14b8a6, #3b82f6);
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
   border: 1px solid transparent; /* Set the initial border color */
-}
-
-.border-gradient-hover:hover {
-  border: 1px solid #ff8a00; /* Change border color on hover */
 }
 
 h1 {
   font-size: 230%;
   font-weight: 500;
+}
+
+.callout-container {
+  position: relative;
+  display: inline-block;
+}
+
+.callout-container:hover::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent #464646 transparent;
+}
+
+.callout-box {
+  position: absolute;
+  top: 65%;
+  border-radius: 15px;
+  font-size: small;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #464646;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.callout-container:hover .callout-box {
+  display: block;
 }

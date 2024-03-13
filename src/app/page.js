@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className=" mt-24  ">
+      <div className=" mt-12  ">
         <HeroSection />
         <AboutSection />
-        <SkillsSection/>
+        <SkillsSection />
         <ProjectsSection />
 
         <ContactSection />
