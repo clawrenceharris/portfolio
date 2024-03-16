@@ -26,7 +26,7 @@ function Project() {
           height={1080}
           src={project.images[0]}
         />
-        <div style={{ padding: "40px", paddingBottom: 100 }}>
+        <div style={{ padding: "43px" }}>
           <div
             style={{
               justifyContent: "space-between",
@@ -38,7 +38,7 @@ function Project() {
               <h1>{project.title}</h1>
 
               <p>
-                {project.description}
+                <i> {project.description}</i>
                 {" | "}
                 {project.isOngoing ? (
                   <i>{project.startYear + " - Present"}</i>
@@ -66,15 +66,9 @@ function Project() {
               )}
             </div>
           </div>
-          {project.longDescription.map((item, index) => (
-            <>
-              <br />
-              <p key={index}>{item}</p>
-            </>
-          ))}
           <br />
           <div className="flex flex-row">
-            <h2>Tools Used:</h2>
+            <h4>Tools Used:</h4>
             {project.tools.map((item) => (
               <div className="callout-container  group  relative mx-[20px]  flex flex-col items-center">
                 <Image
@@ -87,6 +81,13 @@ function Project() {
               </div>
             ))}
           </div>
+          {project.longDescription.map((item, index) => (
+            <>
+              <br />
+              <p key={index}>{item}</p>
+            </>
+          ))}
+          <br />
         </div>
       </div>
     </main>

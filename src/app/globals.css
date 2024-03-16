@@ -26,6 +26,38 @@ span,
 div {
   transition: 0.2s ease;
 }
+
+h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+/* Styling for h2 */
+h2 {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+/* Styling for h3 */
+h3 {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Adjust line height as needed */
+}
+h4 {
+  font-size: 1.25rem; /* Adjust size as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+/* Styling for h5 */
+h5 {
+  font-size: 1rem; /* Adjust size as needed */
+  font-weight: bold;
+  line-height: 1.2; /* Adjust line height as needed */
+}
 main {
   display: flex;
   min-height: 100vh;
@@ -43,11 +75,6 @@ section {
   border: 1px solid transparent; /* Set the initial border color */
 }
 
-h1 {
-  font-size: 230%;
-  font-weight: 500;
-}
-
 .callout-container {
   position: relative;
   display: inline-block;
@@ -55,7 +82,7 @@ h1 {
 
 .callout-box {
   position: absolute;
-  top: 75%;
+  top: 90%;
   border-radius: 15px;
   font-size: small;
   z-index: 100;
@@ -63,6 +90,8 @@ h1 {
   transform: translateX(-50%);
   background-color: #121212;
   color: #fff;
+  text-align: center;
+  min-width: 100px;
   padding: 10px;
   border-radius: 5px;
   display: none;
