@@ -2,7 +2,7 @@ import { tools } from "./tools";
 
 export const projects = [
   {
-    id: 1,
+    id: "1",
     startYear: 2022,
     endYear: 2023,
     title: "Binder",
@@ -18,17 +18,22 @@ export const projects = [
     tags: ["Mobile", "UI/UX"],
     github: "https://github.com/clawrenceharris/Binder",
     tryItLink: "exp://u.expo.dev/update/1d739df8-9772-4d96-9e82-f5de4139ec4e",
-    toolsUsed: [tools.reactnative, tools.github, tools.visualstudiocode],
+    tools: [
+      tools.reactnative,
+      tools.github,
+      tools.visualstudiocode,
+      tools.firebase,
+    ],
   },
 
   {
-    id: 3,
+    id: "3",
     startYear: 2023,
     endYear: 2024,
-    title: "Moons",
+    title: "Moons Footware",
     description: "React E-commerce Website",
     longDescription: [
-      "Moons is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
+      "Moons Footware is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
@@ -38,7 +43,7 @@ export const projects = [
     github: "https://github.com/clawrenceharris/moons",
   },
   {
-    id: 4,
+    id: "4",
     startYear: 2023,
     endYear: 2023,
     title: "Snake 2",
@@ -58,7 +63,7 @@ export const projects = [
     youtube: "https://www.youtube.com/watch?v=G_2CbYHody8&t=123s",
   },
   {
-    id: 5,
+    id: "5",
     startYear: 2023,
     endYear: 2024,
     isOngoing: false,
@@ -77,7 +82,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: "6",
     startYear: 2022,
     isOngoing: true,
     title: "Blobs",
@@ -97,7 +102,7 @@ export const projects = [
   {
     startYear: 2024,
     isOngoing: true,
-    id: 7,
+    id: "7",
     title: "Two Dots Clone",
     description: "Unity Puzzle Game",
     longDescription: [
