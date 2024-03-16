@@ -39,7 +39,7 @@ export const projects = [
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
-    tools: [tools.javascript, tools.react, tools.visualstudiocode],
+    tools: [tools.javascript, tools.react, tools.figma, tools.visualstudiocode],
     images: ["/images/projects/3.png"],
     tags: ["Web", "UI/UX"],
     github: "https://github.com/clawrenceharris/moons",
