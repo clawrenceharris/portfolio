@@ -53,26 +53,15 @@ h1 {
   display: inline-block;
 }
 
-.callout-container:hover::before {
-  content: "";
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 15px;
-  border-style: solid;
-  border-color: transparent transparent #464646 transparent;
-}
-
 .callout-box {
   position: absolute;
-  top: 65%;
+  top: 75%;
   border-radius: 15px;
   font-size: small;
   z-index: 100;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #464646;
+  background-color: #121212;
   color: #fff;
   padding: 10px;
   border-radius: 5px;

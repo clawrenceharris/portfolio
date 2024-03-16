@@ -1,6 +1,9 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { projects } from "@/app/data/projects";
+import GithubIcon from "../../public/icons/github-icon.svg";
+import YoutubeIcon from "../../public/icons/youtube-icon.svg";
+import Link from "next/link";
 
 function Project() {
   const router = useRouter();
@@ -23,17 +26,67 @@ function Project() {
           height={1080}
           src={project.images[0]}
         />
-        <div style={{ padding: "25px" }}>
-          <h1>{project.title}</h1>
-          <p>
-            <i>{project.description}</i>
-          </p>
+        <div style={{ padding: "40px", paddingBottom: 100 }}>
+          <div
+            style={{
+              justifyContent: "space-between",
+              flexDirection: "row",
+              display: "flex",
+            }}
+          >
+            <div>
+              <h1>{project.title}</h1>
+
+              <p>
+                {project.description}
+                {" | "}
+                {project.isOngoing ? (
+                  <i>{project.startYear + " - Present"}</i>
+                ) : (
+                  <i>{project.startYear + " - " + project.endYear}</i>
+                )}
+              </p>
+            </div>
+
+            <div className="flex flex-row gap-2 items-center">
+              {project?.tryItLink && (
+                <Link target="_blank" href={project.tryItLink}>
+                  <p className="underline">Try it out!</p>
+                </Link>
+              )}
+              {project?.github && (
+                <Link target="_blank" href={project.github}>
+                  <Image src={GithubIcon} alt="Github Icon" />
+                </Link>
+              )}
+              {project?.youtube && (
+                <Link target="_blank" href={project.youtube}>
+                  <Image src={YoutubeIcon} alt="Youtube Icon" />
+                </Link>
+              )}
+            </div>
+          </div>
           {project.longDescription.map((item, index) => (
             <>
               <br />
               <p key={index}>{item}</p>
             </>
           ))}
+          <br />
+          <div className="flex flex-row">
+            <h2>Tools Used:</h2>
+            {project.tools.map((item) => (
+              <div className="callout-container  group  relative mx-[20px]  flex flex-col items-center">
+                <Image
+                  width={20}
+                  height={20}
+                  src={item.imageUrl}
+                  alt={item.name}
+                />
+                <div class="callout-box">{item.name}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>

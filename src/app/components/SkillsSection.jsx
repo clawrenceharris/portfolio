@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { skills } from "../data/skills";
 import Skill from "./Skill";
-import SkillsHoverComponent from "./SkillsHoverComponent";
 function SkillsSection() {
   return (
     <section
@@ -13,7 +12,7 @@ function SkillsSection() {
 
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 mt-4 md:mt-0 text-left  h-full">
         {skills.map((item, index) => (
-          <Skill {...item} key={index} />
+          <Skill skill={item} key={index} />
         ))}
       </div>
     </section>

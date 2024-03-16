@@ -1,11 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import colors, {
-  blue,
-  teal,
-  lightBlue,
-  purple,
-  cyan,
-} from "tailwindcss/colors";
+import colors, { blue, cyan } from "tailwindcss/colors";
 
 export const content = [
   "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

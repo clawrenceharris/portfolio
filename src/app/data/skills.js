@@ -1,76 +1,99 @@
+import { tools } from "./tools";
+
 export const skills = [
   {
     name: "React Native",
-    imgUrl: "https://i.ibb.co/5K9yz4L/react-logo.png",
+    imgUrl: tools.reactnative.imageUrl,
     skillLevel: 4,
   },
 
   {
     name: "React",
-    imgUrl: "https://i.ibb.co/5K9yz4L/react-logo.png",
+    imgUrl: tools.react.imageUrl,
     skillLevel: 4,
   },
   {
     name: "HTML5",
-    imgUrl: "https://i.ibb.co/D5hb0tn/html-5.png",
-    skillLevel: 4,
+    imgUrl: tools.html5.imageUrl,
+    skillLevel: 3,
   },
   {
     name: "CSS",
-    imgUrl: "https://i.ibb.co/0sGFZKv/css-3.png",
+    imgUrl: tools.css3.imageUrl,
     skillLevel: 3,
   },
   {
     name: "Pyhton",
-    imgUrl: "https://i.ibb.co/MZh1pbd/python.png",
+    imgUrl: tools.python.imageUrl,
     skillLevel: 3,
   },
   {
     name: "Firebase",
-    imgUrl: "https://i.ibb.co/VjwcDmM/firebase-logo-icon-171157.png",
+    imgUrl: tools.firebase.imageUrl,
     skillLevel: 3,
   },
 
   {
     name: "C#",
-    imgUrl: "https://i.ibb.co/jh79z6p/c-sharp.png",
+    imgUrl: tools.csharp.imageUrl,
     skillLevel: 4,
   },
   {
     name: "Java",
-    imgUrl: "https://i.ibb.co/KWFND31/java.png",
-    skillLevel: 3,
+    imgUrl: tools.java.imageUrl,
+    skillLevel: 4,
   },
   {
     name: "JavaScript",
-    imgUrl: "https://i.ibb.co/wSJTygg/js.png",
+    imgUrl: tools.javascript.imageUrl,
     skillLevel: 4,
   },
   {
     name: "TypeScript",
-    imgUrl: "https://i.ibb.co/kKw3gzG/typescript.png",
+    imgUrl: tools.typescript.imageUrl,
     skillLevel: 3,
   },
 
   {
     name: "Next.js",
-    imgUrl: "https://i.ibb.co/QrhgVcR/nextjs-256x256.png",
+    imgUrl: tools.nextjs.imageUrl,
     skillLevel: 2,
   },
 
   {
     name: "Unity",
-    imgUrl: "https://i.ibb.co/0MfdvxV/unity.png",
-    skillLevel: 4,
+    imgUrl: tools.unity.imageUrl,
+    skillLevel: 3,
   },
   {
     name: "Figma",
-    imgUrl: "https://i.ibb.co/S0SKLF5/figma.png",
+    imgUrl: tools.figma.imageUrl,
     skillLevel: 3,
   },
   {
     name: "Photoshop",
-    imgUrl: "https://i.ibb.co/hXvhCbh/photoshop-png-logo-3085.png",
-    skillLevel: 4,
+    imgUrl: tools.photoshop.imageUrl,
+    skillLevel: 3,
+  },
+  {
+    name: "GitHub/Git",
+    imgUrl: tools.github.imageUrl,
+    skillLevel: 2,
+  },
+  {
+    name: "Visual Studio Code",
+    imgUrl: tools.visualstudiocode.imageUrl,
+    skillLevel: 3,
+  },
+
+  {
+    name: "Visual Studio",
+    imgUrl: tools.visualstudio.imageUrl,
+    skillLevel: 3,
+  },
+  {
+    name: "Tailwind",
+    imgUrl: tools.tailwind.imageUrl,
+    skillLevel: 2,
   },
 ];

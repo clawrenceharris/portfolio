@@ -54,24 +54,39 @@ const ProjectsSection = () => {
         })}
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.images[0]}
-              gitUrl={project.gitUrl}
-              previewUrl={"/project/" + project.id}
-            />
-          </motion.li>
-        ))}
+        {filteredProjects
+          .sort((a, b) => {
+            // Check if a or b is ongoing
+            const aOngoing = a.isOngoing ? -1 : 1;
+            const bOngoing = b.isOngoing ? -1 : 1;
+
+            // If both are ongoing, sort by start year
+            if (a.isOngoing && b.isOngoing) {
+              return a.startYear - b.startYear;
+            }
+
+            // If one is ongoing and the other is not, ongoing comes first
+            if (a.isOngoing || b.isOngoing) {
+              return aOngoing - bOngoing;
+            }
+
+            // If neither are ongoing, sort by end year
+            return b.endYear - a.endYear;
+          })
+          .map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
+              <ProjectCard
+                project={project}
+                previewUrl={"/project/" + project.id}
+              />
+            </motion.li>
+          ))}
       </ul>
     </section>
   );

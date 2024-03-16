@@ -1,5 +1,4 @@
 import React from "react";
-import { blue, teal } from "tailwindcss/colors";
 const ProjectTag = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
     ? "text-white border-gradient"

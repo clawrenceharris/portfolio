@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import YoutubeIcon from "../../../public/youtube-icon.svg";
+import GithubIcon from "../../../public/icons/github-icon.svg";
+import YoutubeIcon from "../../../public/icons/youtube-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 

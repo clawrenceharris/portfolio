@@ -1,6 +1,10 @@
+import { tools } from "./tools";
+
 export const projects = [
   {
     id: 1,
+    startYear: 2022,
+    endYear: 2023,
     title: "Binder",
     description: "React Native Study App",
     longDescription: [
@@ -13,11 +17,14 @@ export const projects = [
     images: ["/images/projects/1.png"],
     tags: ["Mobile", "UI/UX"],
     github: "https://github.com/clawrenceharris/Binder",
-    tryItOut: "",
+    tryItLink: "exp://u.expo.dev/update/1d739df8-9772-4d96-9e82-f5de4139ec4e",
+    toolsUsed: [tools.reactnative, tools.github, tools.visualstudiocode],
   },
 
   {
     id: 3,
+    startYear: 2023,
+    endYear: 2024,
     title: "Moons",
     description: "React E-commerce Website",
     longDescription: [
@@ -25,16 +32,17 @@ export const projects = [
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
-
+    tools: [tools.javascript, tools.react, tools.visualstudiocode],
     images: ["/images/projects/3.png"],
     tags: ["Web"],
     github: "https://github.com/clawrenceharris/moons",
-    tryItOut: "",
   },
   {
     id: 4,
+    startYear: 2023,
+    endYear: 2023,
     title: "Snake 2",
-    description: "Javascript & HTML5 Game",
+    description: "JavaScript & HTML5 Game",
     longDescription: [
       "Inspired by the classic retro Snake game, Snake 2 is a personal project that reinvents the iconic gaming experience with innovative mechanics, unique challenging levels.",
       "Leveraging the State Pattern design, Snake 2 introduces dynamic states for the snake player. Each power-up picked up triggers a shift in the snake's behavior. Whether in magnet mode or apple-collecting frenzy, the snake evolves with every power-up acquired.",
@@ -43,41 +51,63 @@ export const projects = [
     ],
 
     images: ["/images/projects/4.png"],
-
     tags: ["Web", "Games"],
-    github: "",
-    tryItOut: "",
+    tools: [tools.html5, tools.css3, tools.visualstudiocode, tools.javascript],
+    github: "https://github.com/clawrenceharris/snake2",
+    tryItLink: "https://clawrenceharris.github.io/snake2/",
+    youtube: "https://www.youtube.com/watch?v=G_2CbYHody8&t=123s",
   },
   {
     id: 5,
+    startYear: 2023,
+    endYear: 2024,
+    isOngoing: false,
     title: "Atunity",
     description: "UX Case Study",
     longDescription: [
       "This was a UX case study, based on an app called Atunity, a dedicated platform aimed at elevating mental health, and concentration and overall well-being. The project's core objective was to create an immersive and user-centric experience, offering a curated collection of tracks, playlists, and videos encompassing soothing music, guided meditation, and calming sounds.",
       "The project kicked off with an in-depth exploration of user needs and expectations. Through extensive user interviews, I engaged with individuals to gain insights into their mental health challenges, stressors, and aspirations for a wellness app. Based on the gathered insights, I crafted detailed user personas to represent the diverse range of potential users.",
-
       "The Atunity UX case study has culminated in a thoughtfully designed app dedicated to make a positive impact on users' mental well-being. By integrating personas, journey maps, storyboards, user interviews, paper prototypes, and iterative user testing, the project has laid the foundation for a user-centered approach.",
     ],
     images: ["/images/projects/2.png"],
     tags: ["UI/UX"],
-    github: "/",
-    tryItOut:
-      "https://docs.google.com/document/d/1OKlZUbeYxzwa1ln2PuNc7ah0ubaOIKgF6rTIoNN8wBw/edit?usp=sharing",
+    tools: [tools.photoshop],
+    tryItLink:
+      "https://www.behance.net/gallery/193988695/Atunity-UX-Case-Study",
   },
 
   {
     id: 6,
+    startYear: 2022,
+    isOngoing: true,
     title: "Blobs",
     description: "Unity Puzzle Game",
     longDescription: [
-      "Blobs, a two-year personal project developed while learning Unity and C#, showcases my problem-solving skills through implemented design patterns. The game features levels with colored slime cubes, challenging players to clear the board by moving and merging Blobs.",
-      "The concept emerged naturally during brainstorming sessions, refined from colored sticky notes. Structuring code to separate visuals from game logic posed a significant challenge, addressed with the Model-view-controller pattern. Implementing an 'Undo' feature was facilitated by the Command Pattern, ensuring seamless backtracking and codebase maintainability.",
+      "Blobs, a personal project developed while learning Unity and C#, showcases my problem-solving skills through effective implementation of design patterns. The game features levels with colored slime cubes, challenging players to clear the board by moving and merging Blobs.",
+      "The concept emerged naturally during brainstorming sessions, refined using colored sticky notes. Structuring code to separate visuals from game logic posed a significant challenge, addressed using an MVC approach. Implementing an 'Undo' feature was facilitated by the Command Pattern, ensuring seamless backtracking and codebase maintainability.",
       "Blobs served as a playground for honing my coding abilities and exploring advanced concepts in software architecture. Overcoming challenges like code organization and feature implementation not only enhanced the game's functionality but also deepened my understanding of programming principles",
     ],
     images: ["/images/projects/6.png"],
     tags: ["Games"],
-    links: [""],
-    tryItOut: "",
-    github: "",
+    tryItLink: "",
+    youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
+    tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
+  },
+
+  {
+    startYear: 2024,
+    isOngoing: true,
+    id: 7,
+    title: "Two Dots Clone",
+    description: "Unity Puzzle Game",
+    longDescription: [
+      "Two Dots has remained one of my cherished mobile puzzle games. The premise of the game involves connecting dots of the same color to form squares, which subsequently clears all dots of the same color from the board. My journey with this endeavor began around 2020, but I initially found the task quite challenging and took a hiatus. However, several years later, armed with enhanced Unity game development skills and renewed confidence, I embarked on the project from near scratch. This time proved to be a success, as I was able to develop a satisfying product.",
+      "In the initial stages of the project, I encountered a challenge with organizing the code effectively, particularly in separating visual components from game logic. To address this, I implemented a customized version of the Model-View-Controller (MVC) pattern, tailored specifically for Unity, which proved instrumental in resolving the issue.",
+      "Another significant challenge arose when implementing the feature that allows the lines used to connect the dots to scale and rotate dynamically based on mouse position. Through an iterative process and meticulous attention to detail, I successfully overcame this obstacle.",
+    ],
+    images: ["/images/projects/7.png"],
+    tags: ["Games"],
+    youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
+    tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
   },
 ];
