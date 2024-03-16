@@ -34,7 +34,7 @@ export const projects = [
     ],
     tools: [tools.javascript, tools.react, tools.visualstudiocode],
     images: ["/images/projects/3.png"],
-    tags: ["Web"],
+    tags: ["Web", "UI/UX"],
     github: "https://github.com/clawrenceharris/moons",
   },
   {
