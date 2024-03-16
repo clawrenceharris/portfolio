@@ -10,7 +10,7 @@ const SkillsHoverComponent = ({ skill }) => {
   ];
 
   return (
-    <div class="callout-box">
+    <div className="callout-box">
       {skill.name + ": " + levels[skill.skillLevel - 1]}
     </div>
   );

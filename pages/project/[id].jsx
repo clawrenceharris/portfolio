@@ -22,11 +22,26 @@ function Project() {
             height: "auto",
             objectFit: "contain",
           }}
+          alt={project.description}
           width={1920}
           height={1080}
           src={project.images[0]}
         />
-        <div style={{ padding: "43px" }}>
+        <div style={{ padding: "43px 25px", position: "relative" }}>
+          <div
+            style={{
+              backgroundColor: "#ffffff20",
+              borderRadius: 25,
+              top: 10,
+              left: 25,
+              position: "absolute",
+              textAlign: "center",
+              padding: "7px 20px",
+              width: "auto",
+            }}
+          >
+            <p>{project.projectType + " Project"}</p>
+          </div>
           <div
             style={{
               justifyContent: "space-between",
@@ -34,7 +49,7 @@ function Project() {
               display: "flex",
             }}
           >
-            <div>
+            <div style={{ marginTop: "20px" }}>
               <h1>{project.title}</h1>
 
               <p>
@@ -48,7 +63,7 @@ function Project() {
               </p>
             </div>
 
-            <div className="flex flex-row gap-2 items-center">
+            <div className=" flex flex-row gap-2 items-center">
               {project?.tryItLink && (
                 <Link target="_blank" href={project.tryItLink}>
                   <p className="underline">Try it out!</p>
@@ -68,7 +83,7 @@ function Project() {
           </div>
           <br />
           <div className="flex flex-row">
-            <h4>Tools Used:</h4>
+            <h5>Tools Used:</h5>
             {project.tools.map((item) => (
               <div className="callout-container  group  relative mx-[20px]  flex flex-col items-center">
                 <Image

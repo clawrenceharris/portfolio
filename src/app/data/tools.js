@@ -7,13 +7,18 @@ export const tools = {
     imageUrl: "https://i.ibb.co/tJ70m5g/Tailwind-CSS-Logo-svg.png",
     name: "Tailwind",
   },
+
   javascript: {
     name: "JavaScript",
     imageUrl: "https://i.ibb.co/wSJTygg/js.png",
   },
   java: {
-    ame: "Java",
+    name: "Java",
     imageUrl: "https://i.ibb.co/KWFND31/java.png",
+  },
+  git: {
+    imageUrl: "https://i.ibb.co/QkNnMjv/Git-icon-svg.png",
+    name: "Git",
   },
   github: {
     name: "GitHub",
@@ -44,11 +49,11 @@ export const tools = {
     imageUrl: "https://i.ibb.co/0sGFZKv/css-3.png",
   },
   html5: {
-    name: "GitHub",
+    name: "HTML5",
     imageUrl: "https://i.ibb.co/D5hb0tn/html-5.png",
   },
   nextjs: {
-    name: "GitHub",
+    name: "NextJS",
     imageUrl: "https://i.ibb.co/QrhgVcR/nextjs-256x256.png",
   },
   python: {

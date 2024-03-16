@@ -2,98 +2,86 @@ import { tools } from "./tools";
 
 export const skills = [
   {
-    name: "React Native",
-    imgUrl: tools.reactnative.imageUrl,
+    ...tools.reactnative,
     skillLevel: 4,
   },
 
   {
-    name: "React",
-    imgUrl: tools.react.imageUrl,
+    ...tools.react,
     skillLevel: 4,
   },
   {
-    name: "HTML5",
-    imgUrl: tools.html5.imageUrl,
+    ...tools.html5,
     skillLevel: 3,
   },
   {
-    name: "CSS",
-    imgUrl: tools.css3.imageUrl,
+    ...tools.css3,
     skillLevel: 3,
   },
   {
-    name: "Pyhton",
-    imgUrl: tools.python.imageUrl,
+    ...tools.python,
     skillLevel: 3,
   },
   {
-    name: "Firebase",
-    imgUrl: tools.firebase.imageUrl,
+    ...tools.firebase,
     skillLevel: 3,
   },
 
   {
-    name: "C#",
-    imgUrl: tools.csharp.imageUrl,
+    ...tools.csharp,
     skillLevel: 4,
   },
   {
-    name: "Java",
-    imgUrl: tools.java.imageUrl,
+    ...tools.java,
     skillLevel: 4,
   },
   {
-    name: "JavaScript",
-    imgUrl: tools.javascript.imageUrl,
+    ...tools.javascript,
     skillLevel: 4,
   },
   {
-    name: "TypeScript",
-    imgUrl: tools.typescript.imageUrl,
+    ...tools.typescript,
     skillLevel: 3,
   },
 
   {
-    name: "Next.js",
-    imgUrl: tools.nextjs.imageUrl,
+    ...tools.nextjs,
+    skillLevel: 1,
+  },
+
+  {
+    ...tools.unity,
+    skillLevel: 4,
+  },
+  {
+    ...tools.figma,
+    skillLevel: 3,
+  },
+  {
+    ...tools.photoshop,
+    skillLevel: 4,
+  },
+  {
+    ...tools.github,
     skillLevel: 2,
   },
 
   {
-    name: "Unity",
-    imgUrl: tools.unity.imageUrl,
-    skillLevel: 3,
+    ...tools.git,
+    skillLevel: 1,
   },
+
   {
-    name: "Figma",
-    imgUrl: tools.figma.imageUrl,
-    skillLevel: 3,
-  },
-  {
-    name: "Photoshop",
-    imgUrl: tools.photoshop.imageUrl,
-    skillLevel: 3,
-  },
-  {
-    name: "GitHub/Git",
-    imgUrl: tools.github.imageUrl,
-    skillLevel: 2,
-  },
-  {
-    name: "Visual Studio Code",
-    imgUrl: tools.visualstudiocode.imageUrl,
+    ...tools.visualstudiocode,
     skillLevel: 3,
   },
 
   {
-    name: "Visual Studio",
-    imgUrl: tools.visualstudio.imageUrl,
+    ...tools.visualstudio,
     skillLevel: 3,
   },
   {
-    name: "Tailwind",
-    imgUrl: tools.tailwind.imageUrl,
+    ...tools.tailwind,
     skillLevel: 2,
   },
 ];

@@ -3,6 +3,7 @@ import { tools } from "./tools";
 export const projects = [
   {
     id: "1",
+    projectType: "Academic",
     startYear: 2022,
     endYear: 2023,
     title: "Binder",
@@ -28,10 +29,11 @@ export const projects = [
 
   {
     id: "3",
+    title: "Moons Footware",
+    projectType: "Academic",
+    description: "React E-commerce Website",
     startYear: 2023,
     endYear: 2024,
-    title: "Moons Footware",
-    description: "React E-commerce Website",
     longDescription: [
       "Moons Footware is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
@@ -47,6 +49,7 @@ export const projects = [
     startYear: 2023,
     endYear: 2023,
     title: "Snake 2",
+    projectType: "Personal",
     description: "JavaScript & HTML5 Game",
     longDescription: [
       "Inspired by the classic retro Snake game, Snake 2 is a personal project that reinvents the iconic gaming experience with innovative mechanics, unique challenging levels.",
@@ -66,6 +69,8 @@ export const projects = [
     id: "5",
     startYear: 2023,
     endYear: 2024,
+    projectType: "Academic",
+
     isOngoing: false,
     title: "Atunity",
     description: "UX Case Study",
@@ -86,6 +91,8 @@ export const projects = [
     startYear: 2022,
     isOngoing: true,
     title: "Blobs",
+    projectType: "Personal",
+
     description: "Unity Puzzle Game",
     longDescription: [
       "Blobs, a personal project developed while learning Unity and C#, showcases my problem-solving skills through effective implementation of design patterns. The game features levels with colored slime cubes, challenging players to clear the board by moving and merging Blobs.",
@@ -103,6 +110,7 @@ export const projects = [
     startYear: 2024,
     isOngoing: true,
     id: "7",
+    projectType: "Personal",
     title: "Two Dots Clone",
     description: "Unity Puzzle Game",
     longDescription: [

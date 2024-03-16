@@ -8,7 +8,7 @@ const ProjectCard = ({ project, previewUrl }) => {
       <div className="h-[200px] md:h-[300px]  overflow-hidden rounded-[25px] relative group">
         <Image
           src={project.images[0]}
-          alt={project.title}
+          alt={project.description}
           className="w-full h-full object-cover"
           width={300}
           height={300}
