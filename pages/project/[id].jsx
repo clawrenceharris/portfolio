@@ -32,7 +32,7 @@ function Project() {
             style={{
               backgroundColor: "#ffffff20",
               borderRadius: 25,
-              top: 10,
+              top: 25,
               left: 25,
               position: "absolute",
               textAlign: "center",
@@ -43,7 +43,7 @@ function Project() {
             <p>{project.projectType + " Project"}</p>
           </div>
           <div className="justify-between flex md:flex-row flex-col">
-            <div style={{ marginTop: "20px" }}>
+            <div style={{ marginTop: "30px" }}>
               <h1>{project.title}</h1>
 
               <p>
