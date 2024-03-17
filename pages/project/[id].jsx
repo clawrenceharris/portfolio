@@ -42,13 +42,7 @@ function Project() {
           >
             <p>{project.projectType + " Project"}</p>
           </div>
-          <div
-            style={{
-              justifyContent: "space-between",
-              flexDirection: "row",
-              display: "flex",
-            }}
-          >
+          <div className="justify-between flex md:flex-row flex-col">
             <div style={{ marginTop: "20px" }}>
               <h1>{project.title}</h1>
 
@@ -96,6 +90,11 @@ function Project() {
               </div>
             ))}
           </div>
+          <br />
+          <i style={{ color: "yellow" }}>
+            {project?.note && "**" + project.note + "**"}
+          </i>
+          <br />
           {project.longDescription.map((item, index) => (
             <>
               <br />

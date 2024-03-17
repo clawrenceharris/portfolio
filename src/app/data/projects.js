@@ -13,8 +13,9 @@ export const projects = [
       "The development of Binder presented a unique set of challenges, particularly in managing state changes within the application. Implementing Redux state management system helped us overcome this challenge.",
       "The app facilitates collaborative learning through effortless group formation and management. Powered by Firebase, it delivers real-time functionality for secure authentication and dynamic updates to study materials and messaging.",
       "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
+      ,
     ],
-
+    note: 'The link to the project only works on a mobile device. To see it, tap "Try it Out or copy and paste the link into your mobile browser.',
     images: ["/images/projects/1.png"],
     tags: ["Mobile", "UI/UX"],
     github: "https://github.com/clawrenceharris/Binder",
