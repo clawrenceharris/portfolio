@@ -52,6 +52,11 @@ export const tools = {
     name: "HTML5",
     imageUrl: "https://i.ibb.co/D5hb0tn/html-5.png",
   },
+  dart: {
+    name: "Dart",
+    imageUrl: "https://i.ibb.co/K7Smhz1/Dart-logo.png",
+  },
+
   nextjs: {
     name: "NextJS",
     imageUrl: "https://i.ibb.co/QrhgVcR/nextjs-256x256.png",

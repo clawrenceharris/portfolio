@@ -22,11 +22,11 @@ export const skills = [
     ...tools.python,
     skillLevel: 3,
   },
+
   {
-    ...tools.firebase,
+    ...tools.dart,
     skillLevel: 3,
   },
-
   {
     ...tools.csharp,
     skillLevel: 4,
@@ -69,6 +69,10 @@ export const skills = [
   {
     ...tools.git,
     skillLevel: 1,
+  },
+  {
+    ...tools.firebase,
+    skillLevel: 3,
   },
 
   {
