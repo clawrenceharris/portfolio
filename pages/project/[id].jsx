@@ -60,7 +60,14 @@ function Project() {
             <div className=" flex flex-row gap-2 items-center">
               {project?.tryItLink && (
                 <Link target="_blank" href={project.tryItLink}>
-                  <p className="underline">Try it out!</p>
+                  <p
+                    style={{
+                      color: "#06b6d4",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    Try it out!
+                  </p>
                 </Link>
               )}
               {project?.github && (
