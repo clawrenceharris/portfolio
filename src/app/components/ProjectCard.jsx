@@ -19,7 +19,7 @@ const ProjectCard = ({ project, previewUrl }) => {
           <h5 className="text-xl font-semibold mb-2">{project.title}</h5>
 
           <p>
-            {project.isOngoing ? (
+            {!project?.endYear ? (
               <i>{project.startYear + " - Present"}</i>
             ) : (
               <i>{project.startYear + " - " + project.endYear}</i>

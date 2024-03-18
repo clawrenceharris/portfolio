@@ -49,7 +49,7 @@ function Project() {
               <p>
                 <i> {project.description}</i>
                 {" | "}
-                {project.isOngoing ? (
+                {!project?.endYear ? (
                   <i>{project.startYear + " - Present"}</i>
                 ) : (
                   <i>{project.startYear + " - " + project.endYear}</i>
@@ -93,10 +93,10 @@ function Project() {
             </div>
           </div>
           <br />
-          <div className="flex flex-row">
+          <div className="flex flex-row flex-wrap items-center">
             <h5>Tools Used:</h5>
             {project.tools.map((item) => (
-              <div className="callout-container  group  relative mx-[20px]  flex flex-col items-center">
+              <div className="callout-container  group  relative px-3 mt-3  flex flex-col items-center">
                 <Image
                   width={20}
                   height={20}
