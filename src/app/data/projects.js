@@ -96,7 +96,7 @@ export const projects = [
 
     description: "Unity Puzzle Game",
     longDescription: [
-      "Blobs, a personal project developed while learning Unity and C#, showcases my problem-solving skills through effective implementation of design patterns. The game features levels with colored slime cubes, challenging players to clear the board by moving and merging Blobs.",
+      "Blobs, a personal project developed while learning Unity and C#, showcases my problem-solving skills through effective implementation of design patterns. The game features levels with different colored slime cubes, challenging players to clear the board by moving and merging them together.",
       "The concept emerged naturally during brainstorming sessions, refined using colored sticky notes. Structuring code to separate visuals from game logic posed a significant challenge, addressed using an MVC approach. Implementing an 'Undo' feature was facilitated by the Command Pattern, ensuring seamless backtracking and codebase maintainability.",
       "Blobs served as a playground for honing my coding abilities and exploring advanced concepts in software architecture. Overcoming challenges like code organization and feature implementation not only enhanced the game's functionality but also deepened my understanding of programming principles",
     ],
