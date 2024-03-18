@@ -147,8 +147,8 @@ export const projects = [
     description: "Flutter Platformer Game",
     longDescription: [
       "Gomi Hero is a puzzle platformer game I made with a partner where the player can play as different colored trash bins. The game's mechanics aims to teach players about proper sorting of trash and its importance to environmental sustainability as well as inspire others to take initiative to clean the environment.",
-      "As both of us had no prior experience with Flutter or Dart, embarking on this project presented a significant challenge. Learning the language and familiarizing ourselves with the APIs proved to be a steep learning curve. Developing an effective collision detection system was particularly demanding, requiring meticulous attention to detail to ensure smooth player movement within the game scene. Integrating widgets while constructing the UI also posed yet another challenge that we diligently worked to overcome.",
-      "Leading the UI and game logic, this project allowed me to demonstrate my skills in Flutter as well as game programming and game design.",
+      "As both of us had no prior experience with Flutter or Dart, embarking on this project presented a significant challenge. Learning the language and familiarizing ourselves with the APIs proved to be a steep learning curve. Developing an effective collision detection system and crafting the UI using Flutter's widgets posed yet another challenge that, with meticulous attention to detail, we successfully overcame.",
+      "As I took charge of the UI and game logic, this project allowed me to demonstrate my skills in Flutter as well as game programming and game design.",
     ],
     note: 'The game works a lot better in Chorme. If you want to play it, click "Try it Out" in a Chrome browser.',
     images: ["/images/projects/8.png"],

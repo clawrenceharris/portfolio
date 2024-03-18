@@ -63,8 +63,7 @@ export const tools = {
   },
   flame: {
     name: "Flame",
-    imageUrl:
-      "https://i.ibb.co/vzZYQ8M/101553774-3bc7b000-39ad-11eb-8a6a-de2daa31bd64.png",
+    imageUrl: "https://i.ibb.co/MRRHFQK/flame.png",
   },
   nextjs: {
     name: "NextJS",
