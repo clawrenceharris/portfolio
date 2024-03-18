@@ -23,6 +23,7 @@ export const projects = [
     tools: [
       tools.reactnative,
       tools.github,
+      tools.git,
       tools.visualstudiocode,
       tools.firebase,
     ],
@@ -35,12 +36,20 @@ export const projects = [
     description: "React E-commerce Website",
     startYear: 2023,
     endYear: 2024,
+
     longDescription: [
       "Moons Footware is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
-    tools: [tools.javascript, tools.react, tools.figma, tools.visualstudiocode],
+    tools: [
+      tools.javascript,
+      tools.react,
+      tools.figma,
+      tools.visualstudiocode,
+      tools.git,
+      tools.github,
+    ],
     images: ["/images/projects/3.png"],
     tags: ["Web", "UI/UX"],
     github: "https://github.com/clawrenceharris/moons",
@@ -61,7 +70,14 @@ export const projects = [
 
     images: ["/images/projects/4.png"],
     tags: ["Web", "Games"],
-    tools: [tools.html5, tools.css3, tools.visualstudiocode, tools.javascript],
+    tools: [
+      tools.html5,
+      tools.css3,
+      tools.visualstudiocode,
+      tools.javascript,
+      tools.git,
+      tools.github,
+    ],
     github: "https://github.com/clawrenceharris/snake2",
     tryItLink: "https://clawrenceharris.github.io/snake2/",
     youtube: "https://www.youtube.com/watch?v=G_2CbYHody8&t=123s",
@@ -71,8 +87,6 @@ export const projects = [
     startYear: 2023,
     endYear: 2024,
     projectType: "Academic",
-
-    isOngoing: false,
     title: "Atunity",
     description: "UX Case Study",
     longDescription: [
@@ -90,7 +104,6 @@ export const projects = [
   {
     id: "6",
     startYear: 2022,
-    isOngoing: true,
     title: "Blobs",
     projectType: "Personal",
 
@@ -102,14 +115,12 @@ export const projects = [
     ],
     images: ["/images/projects/6.png"],
     tags: ["Games"],
-    tryItLink: "",
     youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
     tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
   },
 
   {
     startYear: 2024,
-    isOngoing: true,
     id: "7",
     projectType: "Personal",
     title: "Two Dots Clone",
@@ -122,6 +133,38 @@ export const projects = [
     images: ["/images/projects/7.png"],
     tags: ["Games"],
     youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
+    github: "https://github.com/clawrenceharris/snake2",
+
     tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
+  },
+
+  {
+    startYear: 2024,
+    endYear: 2024,
+    id: "8",
+    projectType: "Hackathon",
+    title: "Gomi Hero",
+    description: "Flutter Platformer Game",
+    longDescription: [
+      "Gomi Hero is a puzzle platformer game I made with a partner where the player can play as different colored trash bins. The game's mechanics aims to teach players about proper sorting of trash and its importance to environmental sustainability as well as inspire others to take initiative to clean the environment.",
+      "As both of us had no prior experience with Flutter or Dart, embarking on this project presented a significant challenge. Learning the language and familiarizing ourselves with the APIs proved to be a steep learning curve. Developing an effective collision detection system was particularly demanding, requiring meticulous attention to detail to ensure smooth player movement within the game scene. Integrating widgets while constructing the UI also posed yet another challenge that we diligently worked to overcome.",
+      "Leading the UI and game logic, this project allowed me to demonstrate my skills in Flutter as well as game programming and game design.",
+    ],
+    note: 'The game works a lot better in Chorme. If you want to play it, click "Try it Out" in a Chrome browser.',
+    images: ["/images/projects/8.png"],
+    tags: ["Games"],
+    tryItLink: "https://clawrenceharris.github.io/gomi/",
+    github: "https://github.com/clawrenceharris/gomi",
+    youtube: "https://youtu.be/STiR6elqXGQ",
+    tools: [
+      tools.photoshop,
+      tools.visualstudiocode,
+      tools.github,
+      tools.git,
+      tools.dart,
+
+      tools.flutter,
+      tools.flame,
+    ],
   },
 ];

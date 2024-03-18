@@ -57,6 +57,15 @@ export const tools = {
     imageUrl: "https://i.ibb.co/K7Smhz1/Dart-logo.png",
   },
 
+  flutter: {
+    name: "Flutter",
+    imageUrl: "https://i.ibb.co/bFnyLrQ/Flutter-logo-svg.png",
+  },
+  flame: {
+    name: "Flame",
+    imageUrl:
+      "https://i.ibb.co/vzZYQ8M/101553774-3bc7b000-39ad-11eb-8a6a-de2daa31bd64.png",
+  },
   nextjs: {
     name: "NextJS",
     imageUrl: "https://i.ibb.co/QrhgVcR/nextjs-256x256.png",
