@@ -57,7 +57,7 @@ function Project() {
               </p>
             </div>
 
-            <div className=" flex flex-row gap-2 items-center">
+            <div className=" flex flex-row gap-4 items-center">
               {project?.tryItLink && (
                 <Link target="_blank" href={project.tryItLink}>
                   <p
@@ -72,12 +72,22 @@ function Project() {
               )}
               {project?.github && (
                 <Link target="_blank" href={project.github}>
-                  <Image src={GithubIcon} alt="Github Icon" />
+                  <Image
+                    width={30}
+                    height={30}
+                    src={GithubIcon}
+                    alt="Github Icon"
+                  />
                 </Link>
               )}
               {project?.youtube && (
                 <Link target="_blank" href={project.youtube}>
-                  <Image src={YoutubeIcon} alt="Youtube Icon" />
+                  <Image
+                    width={30}
+                    height={30}
+                    src={YoutubeIcon}
+                    alt="Youtube Icon"
+                  />
                 </Link>
               )}
             </div>
