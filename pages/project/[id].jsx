@@ -94,7 +94,7 @@ function Project() {
           </div>
           <br />
           <div className="flex flex-row flex-wrap items-center">
-            <h5>Tools Used:</h5>
+            <h5 className="mt-3">Tools Used:</h5>
             {project.tools.map((item) => (
               <div className="callout-container  group  relative px-3 mt-3  flex flex-col items-center">
                 <Image
