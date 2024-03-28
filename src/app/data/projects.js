@@ -31,14 +31,14 @@ export const projects = [
 
   {
     id: "3",
-    title: "Moons Footware",
+    title: "Moons Footwear",
     projectType: "Academic",
     description: "React E-commerce Website",
     startYear: 2023,
     endYear: 2024,
 
     longDescription: [
-      "Moons Footware is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
+      "Moons Footwear is a fictional shoe company, brought to life through an innovative and responsive e-commerce website crafted with precision in React. As the sole developer behind this project, my goal was to create an immersive online shopping experience that seamlessly blends functionality, aesthetics, and responsiveness.",
       "Moons incorporates a consistent, accessible and responsive design, as well as an intuitive cart management system, and user-friendly checkout process.",
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
