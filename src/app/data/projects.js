@@ -150,7 +150,7 @@ export const projects = [
       "As both of us had no prior experience with Flutter or Dart, embarking on this project presented a significant challenge. Learning the language and familiarizing ourselves with the APIs proved to be a steep learning curve. Developing an effective collision detection system and crafting the UI using Flutter's widgets posed yet another challenge that, with meticulous attention to detail, we successfully overcame.",
       "As I took charge of the UI and game logic, this project allowed me to demonstrate my skills in Flutter as well as game programming and game design.",
     ],
-    note: 'The game works a lot better in Chorme. If you want to play it, click "Try it Out" in a Chrome browser.',
+    note: 'The game works a lot better in Google Chrome. If you want to play it, click "Try it Out" in a Chrome browser.',
     images: ["/images/projects/8.png"],
     tags: ["Games"],
     tryItLink: "https://clawrenceharris.github.io/gomi/",
