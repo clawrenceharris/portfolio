@@ -55,24 +55,15 @@ const ProjectsSection = () => {
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects
-          .sort((a, b) => {
-            // Check if a or b is ongoing
-            const aOngoing = a.isOngoing ? -1 : 1;
-            const bOngoing = b.isOngoing ? -1 : 1;
-
-            // If both are ongoing, sort by start year
-            if (a.isOngoing && b.isOngoing) {
-              return a.startYear - b.startYear;
-            }
-
-            // If one is ongoing and the other is not, ongoing comes first
-            if (a.isOngoing || b.isOngoing) {
-              return aOngoing - bOngoing;
-            }
-
-            // If neither are ongoing, sort by end year
-            return b.endYear - a.endYear;
-          })
+          .sort((a, b) =>
+            a.isOngoing
+              ? a.startYear < b.startYear
+                ? 1
+                : -1
+              : a.startYear > b.startYear
+              ? -1
+              : 1
+          )
           .map((project, index) => (
             <motion.li
               key={index}
