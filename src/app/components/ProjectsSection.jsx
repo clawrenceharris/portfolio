@@ -53,6 +53,7 @@ const ProjectsSection = () => {
           });
         })}
       </div>
+
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects
           .sort((a, b) =>
@@ -60,7 +61,7 @@ const ProjectsSection = () => {
               ? a.startYear < b.startYear
                 ? 1
                 : -1
-              : a.startYear > b.startYear
+              : a.endYear - a.startYear > b.sta
               ? -1
               : 1
           )
