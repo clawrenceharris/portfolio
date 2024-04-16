@@ -78,7 +78,7 @@ export const tools = {
     imageUrl: "https://i.ibb.co/S0SKLF5/figma.png",
   },
   photoshop: {
-    name: "Photshop",
+    name: "Photoshop",
     imageUrl: "https://i.ibb.co/hXvhCbh/photoshop-png-logo-3085.png",
   },
   visualstudiocode: {
