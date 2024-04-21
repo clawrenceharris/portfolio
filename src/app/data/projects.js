@@ -128,12 +128,12 @@ export const projects = [
     longDescription: [
       "Two Dots has remained one of my cherished mobile puzzle games. The premise of the game involves connecting dots of the same color to form squares, which subsequently clears all dots of the same color from the board. My journey with this endeavor began around 2020, but I initially found the task quite challenging and took a hiatus. However, several years later, armed with enhanced Unity game development skills and renewed confidence, I embarked on the project from near scratch. This time proved to be a success, as I was able to develop a satisfying product.",
       "In the initial stages of the project, I encountered a challenge with organizing the code effectively, particularly in separating visual components from game logic. To address this, I implemented a customized version of the Model-View-Controller (MVC) pattern, tailored specifically for Unity, which proved instrumental in resolving the issue.",
-      "Another significant challenge arose when implementing the feature that allows the lines used to connect the dots to scale and rotate dynamically based on mouse position. Through an iterative process and meticulous attention to detail, I successfully overcame this obstacle.",
+      "Another significant challenge arose when implementing the feature that allows the lines, used to connect the dots, to scale and rotate dynamically based on mouse position. Through an iterative process and careful attention to detail, I successfully overcame this obstacle.",
     ],
     images: ["/images/projects/7.png"],
     tags: ["Games"],
     youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
-    github: "https://github.com/clawrenceharris/snake2",
+    github: "https://github.com/clawrenceharris/two-dots",
 
     tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
   },
