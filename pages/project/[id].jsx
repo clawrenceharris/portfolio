@@ -110,6 +110,7 @@ function Project() {
             </div>
           ))}
         </div>
+
         {project?.note && (
           <>
             <br />
@@ -117,13 +118,34 @@ function Project() {
             <br />
           </>
         )}
+        <div className="flex flex-row justify-between">
+          <div style={{ flex: 0.9 }}>
+            {project.longDescription.map((item, index) => (
+              <>
+                <br />
 
-        {project.longDescription.map((item, index) => (
-          <>
-            <br />
-            <p key={index}>{item}</p>
-          </>
-        ))}
+                <p key={index}>{item}</p>
+              </>
+            ))}
+          </div>
+          <div className="flex flex-col ">
+            {project?.additionalImages &&
+              project.additionalImages.map((item) => (
+                <Image
+                  style={{
+                    width: "auto",
+                    height: 200,
+                    margin: 10,
+                    objectFit: "contain",
+                  }}
+                  alt={project.description}
+                  width={1920}
+                  height={1080}
+                  src={item}
+                />
+              ))}
+          </div>
+        </div>
       </div>
     </div>
   );

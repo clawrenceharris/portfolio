@@ -122,6 +122,11 @@ export const projects = [
   {
     startYear: 2024,
     id: "7",
+    additionalImages: [
+      "/images/projects/100.png",
+      "/images/projects/20.png",
+      "/images/projects/13.png",
+    ],
     projectType: "Personal",
     title: "Two Dots Clone",
     description: "Unity Puzzle Game",
