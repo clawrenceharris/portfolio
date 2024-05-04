@@ -118,7 +118,7 @@ function Project() {
             <br />
           </>
         )}
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div style={{ flex: 0.9 }}>
             {project.longDescription.map((item, index) => (
               <>
