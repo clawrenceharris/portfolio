@@ -119,7 +119,7 @@ function Project() {
           </>
         )}
         <div className="flex flex-col md:flex-row justify-between">
-          <div style={{ flex: 0.9 }}>
+          <div style={{ flex: 1 }}>
             {project.longDescription.map((item, index) => (
               <>
                 <br />
@@ -128,14 +128,27 @@ function Project() {
               </>
             ))}
           </div>
-          <div className="flex flex-col ">
+          <div
+            style={{ flex: 1 }}
+            className="flex flex-col items-center mx-4 my-4 "
+          >
+            <iframe
+              width="100%"
+              height="260"
+              src={project.youtube}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             {project?.additionalImages &&
               project.additionalImages.map((item) => (
                 <Image
                   style={{
-                    width: "auto",
-                    height: 200,
-                    margin: 10,
+                    width: "100%",
+                    height: "auto",
+                    margin: 5,
                     objectFit: "contain",
                   }}
                   alt={project.description}

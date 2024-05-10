@@ -89,4 +89,9 @@ export const tools = {
     name: "Visual Studio",
     imageUrl: "https://i.ibb.co/JHPSKWz/Visual-Studio-Icon-2019-svg.png",
   },
+
+  json: {
+    name: "JSON",
+    imageUrl: "https://i.ibb.co/h94jbz8/json-logo-png-transparent.png",
+  },
 };

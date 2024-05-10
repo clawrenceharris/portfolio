@@ -80,7 +80,7 @@ export const projects = [
     ],
     github: "https://github.com/clawrenceharris/snake2",
     tryItLink: "https://clawrenceharris.github.io/snake2/",
-    youtube: "https://www.youtube.com/watch?v=G_2CbYHody8&t=123s",
+    youtube: "https://www.youtube.com/embed/G_2CbYHody8?si=VLlRO6N4NjUyFUEz",
   },
   {
     id: "5",
@@ -115,8 +115,16 @@ export const projects = [
     ],
     images: ["/images/projects/6.png"],
     tags: ["Games"],
-    youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
-    tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
+    youtube: "https://www.youtube.com/embed/oYpmDGsfp0Q?si=Fa2SiPeJgJlgkPoO",
+    tools: [
+      tools.photoshop,
+      tools.unity,
+      tools.csharp,
+      tools.json,
+      tools.visualstudio,
+      tools.git,
+      tools.github,
+    ],
   },
 
   {
@@ -135,14 +143,20 @@ export const projects = [
       "Two Dots has remained one of my cherished mobile puzzle games. The premise of the game involves connecting dots of the same color to form squares, which subsequently clears all dots of the same color from the board. My journey with this endeavor began around 2020, but I initially found the task quite challenging and took a hiatus. However, several years later, armed with enhanced Unity game development skills and renewed confidence, I embarked on the project from near scratch. This time proved to be a success, as I was able to develop a satisfying product.",
       "In the initial stages of the project, I encountered a challenge with organizing the code effectively, particularly in separating visual components from game logic. To address this, I implemented a customized version of the Model-View-Controller (MVC) pattern, tailored specifically for Unity, which proved instrumental in resolving the issue.",
       "Another significant challenge arose when implementing the feature that allows the lines, used to connect the dots, to scale and rotate dynamically based on mouse position. Through an iterative process and careful attention to detail, I successfully overcame this obstacle.",
-      "In addition to the Anchor Dots and Blank Dots that are common mechanics in the original game, I also created a another one called Clock Dots, offering a new and unique gameplay. Overall, this project demonstrates my game programming and level design skills which continue to strengthen as I continue to work on new additions to the game. ",
+      "In addition to the Anchor Dots and Blank Dots that are common mechanics in the original game, I also created another one called Clock Dots, offering a new and unique gameplay. Overall, this project demonstrates my game programming and level design skills which continue to strengthen as I continue to work on new additions to the game. ",
     ],
     images: ["/images/projects/7.png"],
     tags: ["Games"],
-    youtube: "https://www.youtube.com/watch?v=oYpmDGsfp0Q&t=2s",
+    youtube: "https://www.youtube.com/embed/R_eFNtPQVJo?si=sMfmIVeU4faImsgTs",
     github: "https://github.com/clawrenceharris/two-dots",
 
-    tools: [tools.photoshop, tools.unity, tools.csharp, tools.visualstudio],
+    tools: [
+      tools.photoshop,
+      tools.unity,
+      tools.csharp,
+      tools.visualstudio,
+      tools.json,
+    ],
   },
 
   {
@@ -162,7 +176,7 @@ export const projects = [
     tags: ["Games"],
     tryItLink: "https://clawrenceharris.github.io/gomi/",
     github: "https://github.com/clawrenceharris/gomi",
-    youtube: "https://youtu.be/STiR6elqXGQ",
+    youtube: "https://www.youtube.com/embed/STiR6elqXGQ?si=JxeWqvptxuQngaqG",
     tools: [
       tools.photoshop,
       tools.visualstudiocode,
