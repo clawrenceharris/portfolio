@@ -15,11 +15,9 @@ export const projects = [
       "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
       ,
     ],
-    note: 'The link to the project only works on a mobile device. To see it, download Expo Go and tap "Try it Out" or copy and paste the link into your mobile browser.',
     images: ["/images/projects/1.png"],
     tags: ["Mobile", "UI/UX"],
     github: "https://github.com/clawrenceharris/Binder",
-    tryItLink: "exp://u.expo.dev/update/1d739df8-9772-4d96-9e82-f5de4139ec4e",
     tools: [
       tools.reactnative,
       tools.github,
