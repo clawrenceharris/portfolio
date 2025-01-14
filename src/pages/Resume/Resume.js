@@ -2,9 +2,9 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <main className="h-full w-full px-[290px]">
+    <main className="items-center flex">
       <iframe
-        width={"100%"}
+        width={"600px"}
         height={"100%"}
         style={{
           height: "100vh",
