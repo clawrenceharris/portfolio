@@ -1,5 +1,3 @@
-"use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { blue, teal } from "tailwindcss/colors";

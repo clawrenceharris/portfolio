@@ -1,9 +1,7 @@
-"use client";
 import React from "react";
-import Image from "next/image";
+
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import axios from "axios";
 
 const HeroSection = () => {
@@ -71,12 +69,12 @@ const HeroSection = () => {
             aesthetic and engaging digital solutions.
           </p>
           <div>
-            <Link
+            <a
               href="/#contact"
               className="font-bold hover:opacity-80 px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
-            </Link>
+            </a>
             <button
               onClick={handleDownload}
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
@@ -94,8 +92,8 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] relative ">
-            <Image
-              src="/images/hero-image.png"
+            <img
+              src={require("../assets/images/hero-image.png")}
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}

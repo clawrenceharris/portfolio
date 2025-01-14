@@ -15,7 +15,7 @@ export const projects = [
       "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
       ,
     ],
-    images: ["/images/projects/1.png"],
+    images: [require("../assets/images/projects/1.png")],
     tags: ["Mobile", "UI/UX"],
     github: "https://github.com/clawrenceharris/Binder",
     tools: [
@@ -48,7 +48,7 @@ export const projects = [
       tools.git,
       tools.github,
     ],
-    images: ["/images/projects/3.png"],
+    images: [require("../assets/images/projects/3.png")],
     tags: ["Web", "UI/UX"],
     github: "https://github.com/clawrenceharris/moons",
   },
@@ -66,7 +66,7 @@ export const projects = [
       "The incorporation of novel game mechanics and the strategic use of the State Pattern for dynamic states showcase my programming and game design skills.",
     ],
 
-    images: ["/images/projects/4.png"],
+    images: [require("../assets/images/projects/4.png")],
     tags: ["Web", "Games"],
     tools: [
       tools.html5,
@@ -92,7 +92,7 @@ export const projects = [
       "The project kicked off with an in-depth exploration of user needs and expectations. Through extensive user interviews, I engaged with individuals to gain insights into their mental health challenges, stressors, and aspirations for a wellness app. Based on the gathered insights, I crafted detailed user personas to represent the diverse range of potential users.",
       "The Atunity UX case study has culminated in a thoughtfully designed app dedicated to make a positive impact on users' mental well-being. By integrating personas, journey maps, storyboards, user interviews, paper prototypes, and iterative user testing, the project has laid the foundation for a user-centered approach.",
     ],
-    images: ["/images/projects/2.png"],
+    images: [require("../assets/images/projects/2.png")],
     tags: ["UI/UX"],
     tools: [tools.photoshop],
     tryItLink:
@@ -111,7 +111,7 @@ export const projects = [
       "The concept emerged naturally during brainstorming sessions, refined using colored sticky notes. Structuring code to separate visuals from game logic posed a significant challenge, addressed using an MVC approach. Implementing an 'Undo' feature was facilitated by the Command Pattern, ensuring seamless backtracking and codebase maintainability.",
       "Blobs served as a playground for honing my coding abilities and exploring advanced concepts in software architecture. Overcoming challenges like code organization and feature implementation not only enhanced the game's functionality but also deepened my understanding of programming principles",
     ],
-    images: ["/images/projects/6.png"],
+    images: [require("../assets/images/projects/6.png")],
     tags: ["Games"],
     youtube: "https://www.youtube.com/embed/oYpmDGsfp0Q?si=Fa2SiPeJgJlgkPoO",
     tools: [
@@ -129,10 +129,10 @@ export const projects = [
     startYear: 2024,
     id: "7",
     additionalImages: [
-      "/images/projects/10.png",
-      "/images/projects/9.png",
+      require("../assets/images/projects/10.png"),
+      require("../assets/images/projects/9.png"),
 
-      "/images/projects/11.png",
+      require("../assets/images/projects/11.png"),
     ],
     projectType: "Personal",
     title: "Two Dots Clone",
@@ -143,7 +143,7 @@ export const projects = [
       "Another significant challenge arose when implementing the feature that allows the lines, used to connect the dots, to scale and rotate dynamically based on mouse position. Through an iterative process and careful attention to detail, I successfully overcame this obstacle.",
       "In addition to the Anchor Dots and Blank Dots that are common mechanics in the original game, I also created another one called Clock Dots, offering a new and unique gameplay. Overall, this project demonstrates my game programming and level design skills which continue to strengthen as I continue to work on new additions to the game. ",
     ],
-    images: ["/images/projects/7.png"],
+    images: [require("../assets/images/projects/7.png")],
     tags: ["Games"],
     youtube: "https://www.youtube.com/embed/R_eFNtPQVJo?si=sMfmIVeU4faImsgTs",
     github: "https://github.com/clawrenceharris/two-dots",
@@ -170,7 +170,7 @@ export const projects = [
       "As I took charge of the UI and game logic, this project allowed me to demonstrate my skills in Flutter as well as game programming and game design.",
     ],
     note: 'The game works a lot better in Google Chrome. If you want to play it, click "Try it Out" in a Chrome browser.',
-    images: ["/images/projects/8.png"],
+    images: [require("../assets/images/projects/8.png")],
     tags: ["Games"],
     tryItLink: "https://clawrenceharris.github.io/gomi/",
     github: "https://github.com/clawrenceharris/gomi",

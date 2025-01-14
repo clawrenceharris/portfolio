@@ -1,9 +1,6 @@
-"use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/icons/github-icon.svg";
-import YoutubeIcon from "../../../public/icons/youtube-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
+import GithubIcon from "../assets/icons/github-icon.svg";
+import YoutubeIcon from "../assets/icons/youtube-icon.svg";
 
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -59,15 +56,15 @@ const ContactSection = () => {
           my best to get back to you within 3 days!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link target="_blank" href="https://github.com/clawrenceharris">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link
+          <a target="_blank" href="https://github.com/clawrenceharris">
+            <img src={GithubIcon} alt="Github Icon" />
+          </a>
+          <a
             target="_blank"
             href="https://www.youtube.com/channel/UCnYo2lHcdEvwJp-xOIpkc7w"
           >
-            <Image src={YoutubeIcon} alt="Youtube Icon" />
-          </Link>
+            <img src={YoutubeIcon} alt="Youtube Icon" />
+          </a>
         </div>
       </div>
       <div>

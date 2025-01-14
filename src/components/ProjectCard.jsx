@@ -1,12 +1,11 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import Image from "next/image";
+
 const ProjectCard = ({ project, previewUrl }) => {
   return (
-    <Link href={previewUrl}>
+    <a href={previewUrl}>
       <div className="h-[200px] md:h-[300px]  overflow-hidden rounded-[25px] relative group">
-        <Image
+        <img
           src={project.images[0]}
           alt={project.description}
           className="w-full h-full object-cover"
@@ -29,7 +28,7 @@ const ProjectCard = ({ project, previewUrl }) => {
 
         <p className="text-[#ADB7BE]">{project.description}</p>
       </div>
-    </Link>
+    </a>
   );
 };
 

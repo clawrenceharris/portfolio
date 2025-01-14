@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { skills } from "../data/skills";
+
+import { skills } from "../constants/skills";
 import Skill from "./Skill";
 function SkillsSection() {
   return (
