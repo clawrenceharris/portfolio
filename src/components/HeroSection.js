@@ -3,30 +3,29 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const handleDownload = async () => {
     try {
-      const response = await axios.get("/api/download", {
-        responseType: "arraybuffer", // Ensure response type is set to arraybuffer
-      });
-
-      // Create a Blob from the response data
-      const blob = new Blob([response.data], {
+      const response = await fetch("/api/download", {
+        method: "GET",
         type: "application/octet-stream",
       });
+      if (!response.ok) {
+        throw new Error(`Download failed: An HTTP error occured.`);
+      }
 
-      // Create a download link
+      const blob = await response.blob();
       const link = document.createElement("a");
-      link.href = window.URL.createObjectURL(blob);
+      const blobUrl = window.URL.createObjectURL(blob);
+      link.href = blobUrl;
       link.download = "CaleHarris.pdf";
-
-      // Append the link to the document and trigger the click event
       document.body.appendChild(link);
       link.click();
-
-      // Clean up
       document.body.removeChild(link);
+      window.URL.revokeObjectURL(blobUrl);
     } catch (error) {
       console.error("Error downloading file:", error);
     }
@@ -62,11 +61,11 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm a dedicated Computer Science student with profound enthusiasm
-            for crafting impactful apps, games, and websites. My creative
-            process is anchored in a user-centric mindset, where I continuously
-            prioritize and consider the end-user experience to ensure intuitive,
-            aesthetic and engaging digital solutions.
+            I'm a dedicated, detail-oriented Computer Science student with a
+            profound enthusiasm for crafting impactful apps, games, and
+            websites. My creative process is anchored in a user-centric mindset,
+            where I continuously prioritize and consider the end-user experience
+            to ensure intuitive, aesthetic and engaging digital solutions.
           </p>
           <div>
             <a
@@ -76,11 +75,13 @@ const HeroSection = () => {
               Hire Me
             </a>
             <button
-              onClick={handleDownload}
+              onClick={() => navigate("/resume")}
+              href="/resume.pdf"
+              download="MyResume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="font-bold block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download Resume
+                View Resume
               </span>
             </button>
           </div>
