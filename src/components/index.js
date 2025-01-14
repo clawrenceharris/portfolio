@@ -1,6 +1,5 @@
 export { default as AboutSection } from "./AboutSection";
 export { default as ContactSection } from "./ContactSection";
-export { default as AchievementsSection } from "./AchievementsSection";
 export { default as MenuOverlay } from "./MenuOverlay";
 
 export { default as NavLink } from "./NavLink";
