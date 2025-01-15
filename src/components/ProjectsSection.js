@@ -15,7 +15,7 @@ const ProjectsSection = () => {
   };
 
   const filteredProjects =
-    tag == "All"
+    tag === "All"
       ? projects
       : projects.filter((project) => project.tags.includes(tag));
 

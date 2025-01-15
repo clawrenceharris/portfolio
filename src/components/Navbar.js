@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import NavLink from "./NavLink";
-import { blue, teal } from "tailwindcss/colors";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-const activeStyle = `text-blue`;
+
 const navLinks = [
   {
     title: "About",

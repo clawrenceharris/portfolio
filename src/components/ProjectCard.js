@@ -1,9 +1,10 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({ project, previewUrl }) => {
+  const navigate = useNavigate();
   return (
-    <a href={previewUrl}>
+    <button onClick={() => navigate(`/project/${project.id}`)}>
       <div className="h-[200px] md:h-[300px]  overflow-hidden rounded-[25px] relative group">
         <img
           src={project.images[0]}
@@ -26,9 +27,9 @@ const ProjectCard = ({ project, previewUrl }) => {
           </p>
         </div>
 
-        <p className="text-[#ADB7BE]">{project.description}</p>
+        <p className="text-[#ADB7BE] text-left">{project.description}</p>
       </div>
-    </a>
+    </button>
   );
 };
 

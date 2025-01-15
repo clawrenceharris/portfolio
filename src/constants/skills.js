@@ -11,6 +11,10 @@ export const skills = [
     skillLevel: 4,
   },
   {
+    ...tools.jquery,
+    skillLevel: 2,
+  },
+  {
     ...tools.html5,
     skillLevel: 3,
   },

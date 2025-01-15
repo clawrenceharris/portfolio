@@ -1,35 +1,11 @@
 import React from "react";
-
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const handleDownload = async () => {
-    try {
-      const response = await fetch("/api/download", {
-        method: "GET",
-        type: "application/octet-stream",
-      });
-      if (!response.ok) {
-        throw new Error(`Download failed: An HTTP error occured.`);
-      }
 
-      const blob = await response.blob();
-      const link = document.createElement("a");
-      const blobUrl = window.URL.createObjectURL(blob);
-      link.href = blobUrl;
-      link.download = "CaleHarris.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(blobUrl);
-    } catch (error) {
-      console.error("Error downloading file:", error);
-    }
-  };
   return (
     <section id="home" className="lg:py-16">
       <div className="flex flex-col-reverse items-center md:flex-row">
@@ -95,7 +71,7 @@ const HeroSection = () => {
           <div className="rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] relative ">
             <img
               src={require("../assets/images/hero-image.png")}
-              alt="hero image"
+              alt="hero"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}

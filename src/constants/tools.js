@@ -16,6 +16,10 @@ export const tools = {
     name: "Java",
     imageUrl: "https://i.ibb.co/KWFND31/java.png",
   },
+  redux: {
+    name: "Redux",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+  },
   git: {
     imageUrl: "https://i.ibb.co/QkNnMjv/Git-icon-svg.png",
     name: "Git",
@@ -31,6 +35,10 @@ export const tools = {
   react: {
     name: "React",
     imageUrl: "https://i.ibb.co/5K9yz4L/react-logo.png",
+  },
+  jquery: {
+    name: "JQuery",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/jquery-4.svg",
   },
   firebase: {
     name: "Firebase",

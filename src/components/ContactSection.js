@@ -20,10 +20,15 @@ const ContactSection = () => {
           my best to get back to you within 3 days!
         </p>
         <div className="socials flex flex-row gap-2">
-          <a target="_blank" href="https://github.com/clawrenceharris">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/clawrenceharris"
+          >
             <img src={GithubIcon} alt="Github Icon" />
           </a>
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://www.youtube.com/channel/UCnYo2lHcdEvwJp-xOIpkc7w"
           >

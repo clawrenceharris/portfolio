@@ -1,21 +1,17 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
-import { projects } from "@/app/data/projects";
-import GithubIcon from "../../public/icons/github-icon.svg";
-import YoutubeIcon from "../../public/icons/youtube-icon.svg";
-import Link from "next/link";
+import React from "react";
+import { useParams } from "react-router-dom";
+import { projects } from "../constants/projects";
 
-function Project() {
-  const router = useRouter();
-  const { id } = router.query;
-  const project = projects.find((item) => item.id == id);
+const Project = () => {
+  const { id } = useParams();
+  const project = projects.find((item) => item.id === id);
 
   if (!project) {
-    return <></>;
+    return <div>Project not found.</div>;
   }
   return (
     <div>
-      <Image
+      <img
         style={{
           width: "100%",
           height: "auto",
@@ -62,7 +58,7 @@ function Project() {
 
           <div className=" flex flex-row gap-4 items-center">
             {project?.tryItLink && (
-              <Link target="_blank" href={project.tryItLink}>
+              <a rel="noreferrer" target="_blank" href={project.tryItLink}>
                 <p
                   style={{
                     color: "#06b6d4",
@@ -71,27 +67,27 @@ function Project() {
                 >
                   Try it out!
                 </p>
-              </Link>
+              </a>
             )}
             {project?.github && (
-              <Link target="_blank" href={project.github}>
-                <Image
+              <a rel="noreferrer" target="_blank" href={project.github}>
+                <img
                   width={30}
                   height={30}
-                  src={GithubIcon}
+                  src={require("../assets/icons/github-icon.svg")}
                   alt="Github Icon"
                 />
-              </Link>
+              </a>
             )}
             {project?.youtube && (
-              <Link target="_blank" href={project.youtube}>
-                <Image
+              <a rel="noreferrer" target="_blank" href={project.youtube}>
+                <img
                   width={30}
                   height={30}
-                  src={YoutubeIcon}
+                  src={require("../assets/icons/youtube-icon.svg")}
                   alt="Youtube Icon"
                 />
-              </Link>
+              </a>
             )}
           </div>
         </div>
@@ -100,12 +96,7 @@ function Project() {
           <h5 className="mt-3">Tools Used:</h5>
           {project.tools.map((item) => (
             <div className="callout-container  group  relative px-3 mt-3  flex flex-col items-center">
-              <Image
-                width={20}
-                height={20}
-                src={item.imageUrl}
-                alt={item.name}
-              />
+              <img width={20} height={20} src={item.imageUrl} alt={item.name} />
               <div class="callout-box">{item.name}</div>
             </div>
           ))}
@@ -132,19 +123,21 @@ function Project() {
             style={{ flex: 1 }}
             className="flex flex-col items-center mx-4 my-4 "
           >
-            <iframe
-              width="100%"
-              height="260"
-              src={project.youtube}
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            {project.youtube && (
+              <iframe
+                width="100%"
+                height="260"
+                src={project.youtube}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            )}
             {project?.additionalImages &&
               project.additionalImages.map((item) => (
-                <Image
+                <img
                   style={{
                     width: "100%",
                     height: "auto",
@@ -162,6 +155,6 @@ function Project() {
       </div>
     </div>
   );
-}
+};
 
 export default Project;
