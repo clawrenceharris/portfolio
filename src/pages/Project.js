@@ -74,7 +74,7 @@ const Project = () => {
                 <img
                   width={30}
                   height={30}
-                  src={require("../assets/icons/github-icon.svg")}
+                  src={"https://i.ibb.co/0Cc13pJ/github-logo-icon-147285.png"}
                   alt="Github Icon"
                 />
               </a>
@@ -84,7 +84,9 @@ const Project = () => {
                 <img
                   width={30}
                   height={30}
-                  src={require("../assets/icons/youtube-icon.svg")}
+                  src={
+                    "https://cdn-icons-png.flaticon.com/128/1384/1384060.png"
+                  }
                   alt="Youtube Icon"
                 />
               </a>
