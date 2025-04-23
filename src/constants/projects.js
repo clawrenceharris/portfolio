@@ -1,9 +1,35 @@
 import { tools } from "./tools";
 
 export const projects = [
+
   {
     startYear: 2025,
-    id: "9",
+    endYear: 2025,
+    projectType: "Academic",
+    title: "High Bridge",
+    description: "HTML Band Website",
+    longDescription: [
+      "This project is a website that I was tasked to build for a fictional band, High Bridge. The website was created as a platform to showcase music, share upcoming events, and connect with the band's audience.",
+      "The project tested my skills in web design, responsiveness, accessibility, and cross-browser compatibility. I focused on creating a visually appealing and user-friendly interface that reflects the band's identity and style.",
+      "The website features a clean and modern design, a well-designed, accessible sign up form that meets WCAG standards, and a responsive layout that adapts to different screen sizes.",
+      "The project was a valuable opportunity to apply my web development skills in a real-world context and create a functional and engaging online presence for a tentative client.",
+    ],
+    images: [require("../assets/images/projects/high-bridge/1.png"),require("../assets/images/projects/high-bridge/5.png"), require("../assets/images/projects/high-bridge/2.png"), require("../assets/images/projects/high-bridge/3.png"),require("../assets/images/projects/high-bridge/4.png")],
+    tags: ["Web", "UI/UX"],
+    tryItLink: "https://highbridge.netlify.app",
+    github: "https://github.com/clawrenceharris/high-bridge",
+    tools: [
+      tools.github,
+      tools.git,
+      tools.css3,
+      tools.javascript,
+      tools.visualstudiocode,
+      tools.html5,
+      tools.sass,
+    ],
+  },
+  {
+    startYear: 2025,
     projectType: "Club",
     title: "Pac-Rat",
     description: "Unity Puzzle Game",
@@ -29,7 +55,6 @@ export const projects = [
 
   {
     startYear: 2024,
-    id: "7",
     projectType: "Personal",
     title: "Two Dots Clone",
     description: "Unity Puzzle Game",
@@ -57,7 +82,6 @@ export const projects = [
     ],
   },
   {
-    id: "2",
     projectType: "Personal",
     startYear: 2024,
     title: "The Desk",
@@ -87,7 +111,6 @@ export const projects = [
   },
 
   {
-    id: "1",
     projectType: "Academic",
     startYear: 2022,
     endYear: 2023,
@@ -112,7 +135,6 @@ export const projects = [
   },
 
   {
-    id: "3",
     title: "Moons Footwear",
     projectType: "Academic",
     description: "React E-commerce Website",
@@ -141,7 +163,6 @@ export const projects = [
     github: "https://github.com/clawrenceharris/moons",
   },
   {
-    id: "4",
     startYear: 2023,
     endYear: 2023,
     title: "Snake 2",
@@ -169,7 +190,6 @@ export const projects = [
     youtube: "https://www.youtube.com/embed/G_2CbYHody8?si=VLlRO6N4NjUyFUEz",
   },
   {
-    id: "5",
     startYear: 2023,
     endYear: 2024,
     projectType: "Academic",
@@ -188,7 +208,6 @@ export const projects = [
   },
 
   {
-    id: "6",
     startYear: 2022,
     title: "Blobs",
     projectType: "Personal",

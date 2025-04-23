@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({ project, previewUrl }) => {
+const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();
   return (
-    <button onClick={() => navigate(`/project/${project.id}`)}>
+    <button onClick={() => navigate(`/project/${index}`)}>
       <div className="h-[200px] md:h-[300px]  overflow-hidden rounded-[25px] relative group">
         <img
           src={project.images[0]}

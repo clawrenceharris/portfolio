@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <main>
       <Navbar />
-      <div className="mt-12">
+      <div className="h-[100vh] mt-12">
         <HeroSection />
         <AboutSection />
         <SkillsSection />

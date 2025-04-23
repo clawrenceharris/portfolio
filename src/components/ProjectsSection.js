@@ -74,8 +74,8 @@ const ProjectsSection = () => {
               transition={{ duration: 0.3, delay: index * 0.4 }}
             >
               <ProjectCard
+                index={index}
                 project={project}
-                previewUrl={"/project/" + project.id}
               />
             </motion.li>
           ))}

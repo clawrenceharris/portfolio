@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import { projects } from "../constants/projects";
 
 const Project = () => {
-  const { id } = useParams();
-  const project = projects.find((item) => item.id === id);
+  const { index } = useParams();
+  const project = projects.find((_, i) => i == index);
 
   if (!project) {
-    return <div>Project not found.</div>;
+    return <div className="flex place-content-center place-items-center w-full h-[100vh] mx-auto"><h1 className="text-md">Project not found...</h1> </div>;
   }
   return (
     <div>

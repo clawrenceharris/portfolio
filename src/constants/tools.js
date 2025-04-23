@@ -102,4 +102,8 @@ export const tools = {
     name: "JSON",
     imageUrl: "https://i.ibb.co/h94jbz8/json-logo-png-transparent.png",
   },
+  sass: {
+    name: "Sass",
+    imageUrl: "https://sass-lang.com/assets/img/styleguide/seal-color.png",
+  },
 };
