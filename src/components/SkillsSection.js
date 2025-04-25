@@ -7,7 +7,7 @@ const SkillsSection = () => {
   return (
     <Element
       name="skills"
-      className="section text-white flex flex-col items-center bg-[#ffffff0a]"
+      className="section text-white flex flex-col items-center bg-[#191919]"
       id="skills"
     >
       <h2 className="text-4xl font-bold text-white mb-4">Skills</h2>

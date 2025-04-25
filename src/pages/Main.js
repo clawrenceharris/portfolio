@@ -9,11 +9,11 @@ import {
   Navbar,
   HeroSection,
 } from "../components";
-const Home = () => {
+const Main = () => {
   return (
     <main>
       <Navbar />
-      <div className="h-[100vh] mt-12">
+      <div className="min-h-[100vh] mt-[140px]">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;
