@@ -10,7 +10,7 @@ export const projects = [
     description: "HTML Band Website",
     longDescription: [
       "This project is a website that I was tasked to build for a fictional band, High Bridge. The website was created as a platform to showcase music, share upcoming events, and connect with the band's audience.",
-      "The project tested my skills in web design, responsiveness, accessibility, and cross-browser compatibility. I focused on creating a visually appealing and user-friendly interface that reflects the band's identity and style.",
+      "The project tested my skills in web design, responsiveness, accessibility, and cross-browser compatibility. Using a mobile-first approach, I focused on creating a visually appealing and user-friendly interface that reflects the band's identity and style.",
       "The website features a clean and modern design, a well-designed, accessible sign up form that meets WCAG standards, and a responsive layout that adapts to different screen sizes.",
       "The project was a valuable opportunity to apply my web development skills in a real-world context and create a functional and engaging online presence for a tentative client.",
     ],
