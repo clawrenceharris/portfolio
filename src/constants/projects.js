@@ -171,7 +171,7 @@ export const projects = [
       "Inspired by the classic retro Snake game, Snake 2 is a personal project that reinvents the iconic gaming experience with innovative mechanics, unique challenging levels.",
       "Leveraging the State Pattern design, Snake 2 introduces dynamic states for the snake player. Each power-up picked up triggers a shift in the snake's behavior.",
       "While challenging to manage consistent graphics with the Canvas API and maintain website responsiveness, the process only reinforced the importance of web accessibility.  Despite the difficulty, I successfully developed a flexible and responsive grid system, ensuring a seamless gaming experience across various screen sizes.",
-      "The incorporation of novel game mechanics and implementation of game desing patterns like the State Pattern for achieving dynamic states gave me the opportunity to showcase my creativity and combine my two passions for game and web development.",
+      "The incorporation of novel game mechanics and implementation of game desing patterns, like the State Pattern for achieving dynamic states, gave me the opportunity to showcase my creativity and combine my two passions for game and web development.",
     ],
 
     images: [require("../assets/images/projects/snake/1.png")],
