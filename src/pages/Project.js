@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { projects } from "../constants/projects";
 
 const Project = () => {
   const { index } = useParams();
   const project = projects.find((_, i) => i == index);
+  useEffect(() => {
+    // Scroll to the top on initial load or when the route changes
+    window.scrollTo(0, 0);
+  }, [window.location.pathname]); // Re-run effect when the pathname changes
 
   if (!project) {
     return <div className="flex place-content-center place-items-center w-full h-[100vh] mx-auto"><h1 className="text-md">Project not found...</h1> </div>;
@@ -30,8 +34,7 @@ const Project = () => {
             top: 20,
             position: "absolute",
             left: 20,
-            zIndex: 100,
-            transition: "1s ease",
+            zIndex: 99,
             WebkitBackdropFilter: "blur(25px)",
             backdropFilter: "blur(25px)",
             textAlign: "center",

@@ -68,6 +68,7 @@ export const projects = [
       require("../assets/images/projects/two-dots/2.png"),
       require("../assets/images/projects/two-dots/3.png"),
       require("../assets/images/projects/two-dots/4.png"),
+      require("../assets/images/projects/two-dots/5.png"),
     ],
     tags: ["Games"],
     youtube: "https://www.youtube.com/embed/R_eFNtPQVJo?si=sMfmIVeU4faImsgTs",
@@ -87,8 +88,8 @@ export const projects = [
     description: "React Web App",
     longDescription: [
       "The Desk is a personal project inspired by my previous project Binder. I like to describe it as a virtual Desk where students can share and download useful study materials.",
-      "The design was my favorite part of the project, as I was able to achieve a smooth and simple feel using a collapsable three column layout. The challenging part would be enhancing the layout to be more responsive, something I am still working to improve.",
-      "I used Redux to enhance state management and improve code quality and user experience. This is also my first Typescript project making my code far more maintainable compared to JavaScript.",
+      "The design was my favorite part of the project, as I was able to achieve a smooth and simple feel using a collapsable three column layout. An ongoing challenge I am tackling is enhancing the layout to work seamlessly in a small viewport and save on refresh. Leveraging search queries, ensuring they persist upon refresh, and updating the layout accordingly is something I aim to refine soon.",
+      "I used Redux to enhance state management and improve code quality and user experience. This is also my first Typescript project making the codebase far more maintainable compared to JavaScript.",
     ],
     tryItLink: "https://clawrenceharris.github.io/desk/",
     images: [
@@ -101,7 +102,7 @@ export const projects = [
       tools.react,
       tools.typescript,
       tools.git,
-      tools.css3,
+      tools.css,
       tools.github,
       tools.redux,
       tools.visualstudiocode,
