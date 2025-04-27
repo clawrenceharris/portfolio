@@ -12,14 +12,14 @@ export const skills = [
   },
   {
     ...tools.jquery,
-    skillLevel: 2,
+    skillLevel: 1,
   },
   {
-    ...tools.html5,
+    ...tools.html,
     skillLevel: 3,
   },
   {
-    ...tools.css3,
+    ...tools.css,
     skillLevel: 3,
   },
   {
@@ -57,11 +57,6 @@ export const skills = [
   },
 
   {
-    ...tools.nextjs,
-    skillLevel: 1,
-  },
-
-  {
     ...tools.unity,
     skillLevel: 4,
   },
@@ -80,7 +75,7 @@ export const skills = [
 
   {
     ...tools.git,
-    skillLevel: 1,
+    skillLevel: 2,
   },
 
   {
@@ -93,10 +88,6 @@ export const skills = [
     skillLevel: 3,
   },
 
-  {
-    ...tools.visualstudio,
-    skillLevel: 3,
-  },
   {
     ...tools.tailwind,
     skillLevel: 2,

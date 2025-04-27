@@ -52,12 +52,12 @@ export const tools = {
     name: "C#",
     imageUrl: "https://i.ibb.co/jh79z6p/c-sharp.png",
   },
-  css3: {
-    name: "CSS3",
+  css: {
+    name: "CSS",
     imageUrl: "https://i.ibb.co/0sGFZKv/css-3.png",
   },
-  html5: {
-    name: "HTML5",
+  html: {
+    name: "HTML",
     imageUrl: "https://i.ibb.co/D5hb0tn/html-5.png",
   },
   dart: {

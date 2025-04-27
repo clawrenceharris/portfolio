@@ -10,6 +10,8 @@
 
 .skill-circle {
   transition: 0.5s ease;
+  background-color: #000000de;
+
 }
 .skill-circle:hover {
   border: 2px solid #06b6d4;
