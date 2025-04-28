@@ -16,11 +16,11 @@ export const skills = [
   },
   {
     ...tools.html,
-    skillLevel: 3,
+    skillLevel: 4,
   },
   {
     ...tools.css,
-    skillLevel: 3,
+    skillLevel: 4,
   },
   {
     ...tools.python,
@@ -34,10 +34,6 @@ export const skills = [
   {
     ...tools.flutter,
     skillLevel: 3,
-  },
-  {
-    ...tools.flame,
-    skillLevel: 2,
   },
   {
     ...tools.csharp,
@@ -91,5 +87,9 @@ export const skills = [
   {
     ...tools.tailwind,
     skillLevel: 2,
+  },
+  {
+    ...tools.sass,
+    skillLevel: 1,
   },
 ];
