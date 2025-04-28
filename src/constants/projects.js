@@ -110,29 +110,29 @@ export const projects = [
     ],
   },
 
-  {
-    projectType: "Academic",
-    startYear: 2022,
-    endYear: 2023,
-    title: "Binder",
-    description: "React Native Study App",
-    longDescription: [
-      "Binder is a React Native app designed to revolutionize student studying. It simplifies learning, fosters collaboration, and builds friendships. With a focus on simplicity, Binder allows students to concentrate on studies without complexity.",
-      "The app facilitates collaborative learning through effortless group formation and management. Powered by Firebase, it delivers real-time functionality for secure authentication and dynamic updates to study materials and messaging.",
-      "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
-    ],
-    images: [require("../assets/images/projects/binder/1.png")],
-    tags: ["Mobile", "UI/UX"],
-    github: "https://github.com/clawrenceharris/Binder",
-    tools: [
-      tools.reactnative,
-      tools.github,
-      tools.git,
-      tools.redux,
-      tools.visualstudiocode,
-      tools.firebase,
-    ],
-  },
+  // {
+  //   projectType: "Academic",
+  //   startYear: 2022,
+  //   endYear: 2023,
+  //   title: "Binder",
+  //   description: "React Native Study App",
+  //   longDescription: [
+  //     "Binder is a React Native app designed to revolutionize student studying. It simplifies learning, fosters collaboration, and builds friendships. With a focus on simplicity, Binder allows students to concentrate on studies without complexity.",
+  //     "The app facilitates collaborative learning through effortless group formation and management. Powered by Firebase, it delivers real-time functionality for secure authentication and dynamic updates to study materials and messaging.",
+  //     "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
+  //   ],
+  //   images: [require("../assets/images/projects/binder/1.png")],
+  //   tags: ["Mobile", "UI/UX"],
+  //   github: "https://github.com/clawrenceharris/Binder",
+  //   tools: [
+  //     tools.reactnative,
+  //     tools.github,
+  //     tools.git,
+  //     tools.redux,
+  //     tools.visualstudiocode,
+  //     tools.firebase,
+  //   ],
+  // },
 
   {
     title: "Moons Footwear",
