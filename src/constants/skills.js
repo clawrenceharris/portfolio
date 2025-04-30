@@ -49,7 +49,7 @@ export const skills = [
   },
   {
     ...tools.typescript,
-    skillLevel: 3,
+    skillLevel: 4,
   },
 
   {
