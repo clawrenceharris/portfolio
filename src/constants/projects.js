@@ -198,7 +198,7 @@ export const projects = [
     longDescription: [
       "This was a UX case study, based on an app called Atunity, a platform aimed at elevating mental health, concentration and overall well-being. The project's core objective was to create an immersive and user-centric experience, offering a curated collection of tracks, playlists, and videos encompassing soothing music, guided meditation, and calming sounds.",
       "The project kicked off with an in-depth exploration of user needs and expectations. I conducted extensive user interviews and gathered insights into their mental health challenges, stressors and aspirations for a wellness app. Based on the gathered insights, I crafted detailed user personas to represent the diverse range of potential users.",
-      "Informed by personas, journey maps, storyboards, interviews, paper prototypes, and iterative testing, the Atunity UX case study has resulted in a thoughtfully designed app. This user-focused methodology has laid out the foundation for an app that will remain relevant to its end users.",
+      "Informed by personas, journey maps, storyboards, interviews, paper prototypes, and iterative testing, the Atunity UX case study has resulted in a thoughtfully designed app. This user-focused methodology has laid out the foundation for an app that will remain relevant and valuable to its end users.",
     ],
     images: [require("../assets/images/projects/atunity/1.png")],
     tags: ["UI/UX"],
