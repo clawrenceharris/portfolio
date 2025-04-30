@@ -26,29 +26,29 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
           I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on opportunities that challenge and expand my skills. 
           </p>
-          <div>
+          <div className="md:flex block gap-6">
+            
+    
+            <button className="w-full p-1  block bg-gradient-to-br from-primary-500 to-secondary-500  text-white ">
 
             
             <NavLink
               to="contact"
-               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
+               className="transition duration-50 ease-in-out w-full inline-block hover:bg-slate-800 py-2 rounded-full "
             >
-               <span className="font-bold block hover:bg-slate-800 rounded-full px-5 py-2">
                 Hire Me
-              </span>
               </NavLink>
+              </button>
             <button
               
               onClick={() => navigate("/resume")}
               href="/resume.pdf"
               download="MyResume.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full hover:bg-[#ffffff90] text-black mt-3 
+              className="py-3  block w-full rounded-full hover:bg-[#ffffff90] text-black  mt-3  md:m-0
               bg-white transition duration-50 ease-in-out"            >
-              <span className="font-bold block transition duration-50 ease-in-out  rounded-full px-5 py-2">
                 View Resume
-              </span>
             </button>
-          </div>
+            </div>
         </div>
         <div
           className="col-span-4 place-self-center mt-4 lg:mt-0"

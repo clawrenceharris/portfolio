@@ -55,14 +55,13 @@ section:not(:first-child), .section:not(:first-child) {
   font-weight: bold;
   line-height: 1.5;
 }
-button{
+button, .button{
   font-family: "Comfortaa", sans-serif;
   font-size: 1.25rem;
   background: none;
-
   color: #fff;
+  max-width: 400px;
   cursor: pointer;
-  padding: 10px 20px;
   border-radius: 50px;
 }
 h3 {
