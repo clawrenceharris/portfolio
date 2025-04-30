@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="flex flex-col-reverse items-center md:flex-row">
         <div
           
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="col-span-8  place-self-center md:text-left text-center "
         >
           <h1 className="text-white mb-4 text-[210%]  sm:text-[270%] md:text-[290%] lg:text-[300%]  lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
@@ -26,7 +26,7 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
           I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on opportunities that challenge and expand my skills. 
           </p>
-          <div className="md:flex block gap-6">
+          <div className="flex flex-col md:flex-row  gap-5  items-center">
             
     
             <button className="w-full p-1  block bg-gradient-to-br from-primary-500 to-secondary-500  text-white ">
