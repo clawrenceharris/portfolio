@@ -24,7 +24,7 @@ const HeroSection = () => {
             Caleb Harris
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on opportunities that challenge and expand my skills. 
+          I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on new opportunities that challenge and expand my skills. 
           </p>
           <div className="flex flex-col md:flex-row  gap-5  items-center">
             
