@@ -147,7 +147,7 @@ export const projects = [
       "By the completion of this project, I took pride in crafting a website that seamlessly integrates functionality and design while prioritizing responsiveness. Moons stands as a testament to my dedication to creating digital solutions that elevate the user experience and demonstrate proficiency in React development.",
     ],
     tools: [
-      tools.javascript,
+      tools.typescript,
       tools.react,
       tools.figma,
       tools.visualstudiocode,
