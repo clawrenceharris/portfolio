@@ -1,18 +1,19 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Element } from "react-scroll";
+import { NavLink } from "./";
 
 const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
+
+   
+
     <Element id="home" name="home" className="section lg:py-16">
       <div className="flex flex-col-reverse items-center md:flex-row">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+        <div
+          
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-[210%]  sm:text-[270%] md:text-[290%] lg:text-[300%]  lg:leading-normal font-extrabold">
@@ -23,32 +24,38 @@ const HeroSection = () => {
             Caleb Harris
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm a dedicated, detail-oriented Computer Science student with a
-            profound enthusiasm for crafting impactful apps, games, and
-            websites. My creative process is anchored in a user-centric mindset,
-            where I actively consider the end-user experience to ensure
-            intuitive, aesthetic and engaging digital solutions.
+          I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on opportunities that challenge and expand my skills. 
           </p>
           <div>
-            <a
-              href="/#contact"
-              className="font-bold hover:opacity-80 px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+            <button>
+
+            
+            <NavLink
+              to="contact"
+               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              Hire Me
-            </a>
+               <span className="font-bold block hover:bg-slate-800 rounded-full px-5 py-2">
+                Hire Me
+              </span>
+              </NavLink>
+              </button>
             <button
+              
               onClick={() => navigate("/resume")}
               href="/resume.pdf"
               download="MyResume.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-black mt-3 
+              hover:text-white
+              bg-white
+              hover:bg-gradient-to-br from-primary-500 to-secondary-500"
             >
-              <span className="font-bold block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="font-bold block ] hover:bg-slate-800 rounded-full px-5 py-2">
                 View Resume
               </span>
             </button>
           </div>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -63,9 +70,9 @@ const HeroSection = () => {
               height={300}
             />
           </div>
-        </motion.div>
+        </div>
       </div>
-    </Element>
+      </Element>
   );
 };
 

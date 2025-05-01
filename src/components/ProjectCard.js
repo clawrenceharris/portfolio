@@ -4,16 +4,14 @@ import { useNavigate } from "react-router-dom";
 const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();
   return (
-    <button onClick={() => navigate(`/project/${index}`)}>
-      <div className="h-[200px] md:h-[300px]  overflow-hidden rounded-[25px] relative group">
+    <button className="project-card" onClick={() => navigate(`/project/${index}`)}>
         <img
           src={project.images[0]}
           alt={project.description}
-          className="w-full h-full object-cover"
+          className="w-full rounded-3xl h-full object-cover"
           width={300}
           height={300}
         />
-      </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <div className="flex flex-row justify-between">
           <h5 className="text-xl font-semibold mb-2">{project.title}</h5>

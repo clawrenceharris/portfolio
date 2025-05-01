@@ -14,7 +14,7 @@ const Project = () => {
     return <div className="flex place-content-center place-items-center w-full h-[100vh] mx-auto"><h1 className="text-md">Project not found...</h1> </div>;
   }
   return (
-    <div>
+    <div id="project">
       <img
         style={{
           width: "100%",

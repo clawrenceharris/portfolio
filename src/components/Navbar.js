@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
-import { Link } from "react-scroll";
+import React from "react";
 import NavLink from "./NavLink";
 
 const navLinks = [
@@ -27,39 +24,17 @@ const navLinks = [
   },
 ];
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212de]">
-      <div className="flex container min-w-full py-5 flex-wrap items-center  justify-between  px-4">
-        <div className="mobile-menu block md:hidden">
-          {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <Bars3Icon className="h-5 w-5" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <XMarkIcon className="h-5 w-5" />
-            </button>
-          )}
-        </div>
-        <div className="menu hidden md:block bg-red" id="navbar">
-          <ul className="flex  md:flex-row md:space-x-8 ">
+    <nav className="sticky md:max-w-[50%] sm:max-w-[90%] mx-auto rounded-full top-6 py-4 px-10 left-0 right-0 z-10 bg-[#ffffff50]  backdrop-blur-md">
+      
+          <ul className="flex font-bold md:space-x-8 text-white">
             <NavLink to="home">Home</NavLink>
             <NavLink to="about">About</NavLink>
             <NavLink to="skills">Skills</NavLink>
             <NavLink to="projects">Projects</NavLink>
             <NavLink to="contact">Contact</NavLink>
           </ul>
-        </div>
-      </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 };

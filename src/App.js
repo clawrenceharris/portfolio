@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import {Main,Project,Resume} from "./pages";
-import "./globals.css";
+import "./styles.css";
 
 function App() {
   return (

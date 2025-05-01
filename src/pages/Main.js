@@ -8,18 +8,31 @@ import {
   AboutSection,
   Navbar,
   HeroSection,
+  AnimatedScrollSection,
 } from "../components";
 const Main = () => {
+  
   return (
-    <main>
+    <main
+    >
+      <img  src={require("../assets/images/bg.jpg")} id="background" />
       <Navbar />
-      <div className="min-h-[100vh] mt-[140px]">
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
+      <div >
 
-        <ContactSection />
+      
+        <AnimatedScrollSection isFirst direction={-1}>
+          <HeroSection />
+        </AnimatedScrollSection>
+        <AnimatedScrollSection direction={1}>
+          <AboutSection />
+        </AnimatedScrollSection>
+        <AnimatedScrollSection direction={-1}>
+          <SkillsSection />
+        </AnimatedScrollSection>
+          <ProjectsSection />
+        <AnimatedScrollSection direction={1}>
+          <ContactSection />
+        </AnimatedScrollSection>
       </div>
       <Footer />
     </main>

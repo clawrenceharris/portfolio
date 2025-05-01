@@ -16,3 +16,4 @@ export { default as SkillsSection } from "./SkillsSection";
 export { default as SkillsHoverComponent } from "./SkillsHoverComponent";
 
 export { default as Skill } from "./Skill";
+export { default as AnimatedScrollSection } from "./AnimatedScrollSection";
