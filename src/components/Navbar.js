@@ -26,9 +26,9 @@ const navLinks = [
 const Navbar = () => {
 
   return (
-    <nav className="sticky md:max-w-[50%] sm:max-w-[90%] mx-auto rounded-full top-6 py-4 px-10 left-0 right-0 z-10 bg-[#ffffff50]  backdrop-blur-md">
+    <nav className="sticky max-w-[90%] mx-auto rounded-full top-6 py-4 px-10 left-0 right-0 z-10 bg-[#ffffff50]  backdrop-blur-md">
       
-          <ul className="flex font-bold md:space-x-8 text-white">
+          <ul className="flex font-bold md:space-x-8 space-x-5 text-white">
             <NavLink to="home">Home</NavLink>
             <NavLink to="about">About</NavLink>
             <NavLink to="skills">Skills</NavLink>

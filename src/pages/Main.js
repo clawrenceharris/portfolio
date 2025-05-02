@@ -20,7 +20,7 @@ const Main = () => {
       <div >
 
       
-        <AnimatedScrollSection isFirst direction={-1}>
+        <AnimatedScrollSection isFirst direction={-1} >
           <HeroSection />
         </AnimatedScrollSection>
         <AnimatedScrollSection direction={1}>
