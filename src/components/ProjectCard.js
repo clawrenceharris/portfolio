@@ -25,7 +25,7 @@ const ProjectCard = ({ project, index }) => {
           </p>
         </div>
 
-        <p className="text-[#ADB7BE] text-left">{project.description}</p>
+        <p  className="text-[#ADB7BE] text-left">{project.description}</p>
       </div>
     </button>
   );

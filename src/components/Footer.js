@@ -1,9 +1,10 @@
 import React from "react";
+import NavLink from "./NavLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-red flex  jusify-center items-center  ">
-      <p>Back To Top </p>
+    <footer className=" flex text-center  justify-center items-center  ">
+     <NavLink to={"home"}> <p>Back To Top </p></NavLink>
     </footer>
   );
 };

@@ -12,13 +12,12 @@ const AnimatedScrollSection = ({ children, isFirst, direction }) => {
   
   const opacity = useTransform(scrollYProgress, [0, 0.5], [isFirst ? 1 : 0, 1]);  
 
-  const x = useTransform(scrollYProgress, [0, 0.5], [100 * direction, 0]); 
 
   return (
     <motion.section
       ref={ref}
       viewport={{once: true}}
-      style={{ opacity, x}}
+      style={{ opacity}}
     >
       {children}
     </motion.section>
