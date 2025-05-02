@@ -11,9 +11,9 @@ const ContactSection = () => {
       className="section grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div>
-        <h5 className="text-xl font-bold text-white my-2">
+        <h3 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
-        </h5>
+        </h3>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
           I&apos;m currently looking for new opportunities. My inbox is always

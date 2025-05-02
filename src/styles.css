@@ -74,6 +74,12 @@ h3 {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
+label{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
 h4 {
   font-size: 1.25rem;
   font-weight: bold;

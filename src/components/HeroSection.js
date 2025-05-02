@@ -46,19 +46,16 @@ const HeroSection = () => {
               download="MyResume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-black mt-3 
               hover:text-white
-              bg-white
+              bg-white transition duration-50 ease-in-out
               hover:bg-gradient-to-br from-primary-500 to-secondary-500"
             >
-              <span className="font-bold block ] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="font-bold block transition duration-50 ease-in-out hover:bg-slate-800 rounded-full px-5 py-2">
                 View Resume
               </span>
             </button>
           </div>
         </div>
         <div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] relative ">
