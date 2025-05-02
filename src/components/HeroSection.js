@@ -27,7 +27,6 @@ const HeroSection = () => {
           I’m a Computer Science student passionate about building immersive digital experiences that enhance product strategy. I specialize in crafting high-quality apps, games, and websites, and I’m always eager to take on opportunities that challenge and expand my skills. 
           </p>
           <div>
-            <button>
 
             
             <NavLink
@@ -38,7 +37,6 @@ const HeroSection = () => {
                 Hire Me
               </span>
               </NavLink>
-              </button>
             <button
               
               onClick={() => navigate("/resume")}
