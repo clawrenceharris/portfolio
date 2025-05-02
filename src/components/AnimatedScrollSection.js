@@ -15,12 +15,15 @@ const AnimatedScrollSection = ({ children, isFirst, direction }) => {
 
   return (
     <motion.section
+      className="section"
       ref={ref}
       viewport={{once: true}}
       style={{ opacity}}
     >
       {children}
-    </motion.section>
+   
+      </motion.section>
+
   );
 };
 export default AnimatedScrollSection;

@@ -46,7 +46,9 @@ h2 {
   font-weight: bold;
   line-height: 1.2;
 }
-
+section:not(:first-child), .section:not(:first-child) {
+  margin-top: 100px;
+}
 #project h1{
   font-family: "Lexend Giga", sans-serif;
   font-size: 3rem;

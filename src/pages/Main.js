@@ -29,8 +29,9 @@ const Main = () => {
         <AnimatedScrollSection direction={-1}>
           <SkillsSection />
         </AnimatedScrollSection>
+
           <ProjectsSection />
-        <AnimatedScrollSection direction={1}>
+        <AnimatedScrollSection direction={-1}>
           <ContactSection />
         </AnimatedScrollSection>
       </div>
