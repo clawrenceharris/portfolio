@@ -3,15 +3,19 @@ import { useParams } from "react-router-dom";
 import { projects } from "../constants/projects";
 
 const Project = () => {
-  const { index } = useParams();
-  const project = projects.find((_, i) => i == index);
+  const { id } = useParams();
+  const project = projects.find((p) => p.id === id);
   useEffect(() => {
     // Scroll to the top on initial load or when the route changes
     window.scrollTo(0, 0);
-  }, [window.location.pathname]); // Re-run effect when the pathname changes
+  }, []); // Re-run effect when the pathname changes
 
   if (!project) {
-    return <div className="flex place-content-center place-items-center w-full h-[100vh] mx-auto"><h1 className="text-md">Project not found...</h1> </div>;
+    return (
+      <div className="flex place-content-center place-items-center w-full h-[100vh] mx-auto">
+        <h1 className="text-md">Project not found...</h1>{" "}
+      </div>
+    );
   }
   return (
     <div id="project">
@@ -140,22 +144,23 @@ const Project = () => {
                 allowfullscreen
               ></iframe>
             )}
-            {project.images
-              .filter((_, i) => i != 0)
-              .map((item) => (
-                <img
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    margin: 5,
-                    objectFit: "contain",
-                  }}
-                  alt={project.description}
-                  width={1920}
-                  height={1080}
-                  src={item}
-                />
-              ))}
+            {project.images.map(
+              (item, i) =>
+                i !== 0 && (
+                  <img
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      margin: 5,
+                      objectFit: "contain",
+                    }}
+                    alt={project.description}
+                    width={1920}
+                    height={1080}
+                    src={item}
+                  />
+                )
+            )}
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import {Main,Project,Resume} from "./pages";
+import { Main, Project, Resume } from "./pages";
 import "./styles.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <Routes>
       <Route index path="/" element={<Main />} />
       <Route path="/resume" element={<Resume />} />
-      <Route path="/project/:index" element={<Project />} />
+      <Route path="/project/:id" element={<Project />} />
     </Routes>
   );
 }

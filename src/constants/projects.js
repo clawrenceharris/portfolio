@@ -1,8 +1,8 @@
 import { tools } from "./tools";
 
 export const projects = [
-
   {
+    id: "1",
     startYear: 2025,
     endYear: 2025,
     projectType: "Academic",
@@ -14,7 +14,13 @@ export const projects = [
       "The website features a clean and modern design, a well-designed, accessible sign up form that meets WCAG standards, and a responsive layout that adapts to different screen sizes.",
       "The project was a valuable opportunity to apply my web development skills in a real-world context and create a functional and engaging online presence for a tentative client.",
     ],
-    images: [require("../assets/images/projects/high-bridge/1.png"),require("../assets/images/projects/high-bridge/5.png"), require("../assets/images/projects/high-bridge/2.png"), require("../assets/images/projects/high-bridge/3.png"),require("../assets/images/projects/high-bridge/4.png")],
+    images: [
+      require("../assets/images/projects/high-bridge/1.png"),
+      require("../assets/images/projects/high-bridge/5.png"),
+      require("../assets/images/projects/high-bridge/2.png"),
+      require("../assets/images/projects/high-bridge/3.png"),
+      require("../assets/images/projects/high-bridge/4.png"),
+    ],
     tags: ["Web", "UI/UX"],
     tryItLink: "https://highbridge.netlify.app",
     github: "https://github.com/clawrenceharris/high-bridge",
@@ -29,6 +35,7 @@ export const projects = [
     ],
   },
   {
+    id: "2",
     startYear: 2025,
     projectType: "Club",
     title: "Pac-Rat",
@@ -54,6 +61,7 @@ export const projects = [
   },
 
   {
+    id: "3",
     startYear: 2024,
     projectType: "Personal",
     title: "Two Dots Clone",
@@ -74,14 +82,10 @@ export const projects = [
     youtube: "https://www.youtube.com/embed/R_eFNtPQVJo?si=sMfmIVeU4faImsgTs",
     github: "https://github.com/clawrenceharris/two-dots",
 
-    tools: [
-      tools.photoshop,
-      tools.unity,
-      tools.csharp,
-      tools.json,
-    ],
+    tools: [tools.photoshop, tools.unity, tools.csharp, tools.json],
   },
   {
+    id: "4",
     projectType: "Personal",
     startYear: 2024,
     title: "The Desk",
@@ -110,31 +114,8 @@ export const projects = [
     ],
   },
 
-  // {
-  //   projectType: "Academic",
-  //   startYear: 2022,
-  //   endYear: 2023,
-  //   title: "Binder",
-  //   description: "React Native Study App",
-  //   longDescription: [
-  //     "Binder is a React Native app designed to revolutionize student studying. It simplifies learning, fosters collaboration, and builds friendships. With a focus on simplicity, Binder allows students to concentrate on studies without complexity.",
-  //     "The app facilitates collaborative learning through effortless group formation and management. Powered by Firebase, it delivers real-time functionality for secure authentication and dynamic updates to study materials and messaging.",
-  //     "Leading the UI design, front end and back end development, I crafted a visually appealing and user-friendly experience. Binder intends to enhance the educational journey for students worldwide, embodying collaboration and community.",
-  //   ],
-  //   images: [require("../assets/images/projects/binder/1.png")],
-  //   tags: ["Mobile", "UI/UX"],
-  //   github: "https://github.com/clawrenceharris/Binder",
-  //   tools: [
-  //     tools.reactnative,
-  //     tools.github,
-  //     tools.git,
-  //     tools.redux,
-  //     tools.visualstudiocode,
-  //     tools.firebase,
-  //   ],
-  // },
-
   {
+    id: "5",
     title: "Moons Footwear",
     projectType: "Academic",
     description: "React E-commerce Website",
@@ -163,6 +144,7 @@ export const projects = [
     github: "https://github.com/clawrenceharris/moons",
   },
   {
+    id: "6",
     startYear: 2023,
     endYear: 2023,
     title: "Snake 2",
@@ -190,6 +172,7 @@ export const projects = [
     youtube: "https://www.youtube.com/embed/G_2CbYHody8?si=VLlRO6N4NjUyFUEz",
   },
   {
+    id: "7",
     startYear: 2023,
     endYear: 2024,
     projectType: "Academic",
@@ -208,6 +191,7 @@ export const projects = [
   },
 
   {
+    id: "8",
     startYear: 2022,
     title: "Blobs",
     projectType: "Personal",
