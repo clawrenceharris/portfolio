@@ -86,7 +86,7 @@ export const skills = [
 
   {
     ...tools.tailwind,
-    skillLevel: 2,
+    skillLevel: 3,
   },
   {
     ...tools.sass,

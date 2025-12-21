@@ -54,7 +54,10 @@ const ProjectsSection = () => {
         })}
       </div>
 
-      <ul ref={listRef} className="grid md:grid-cols-2 gap-8 md:gap-12">
+      <ul
+        ref={listRef}
+        className="grid grid-cols-2 gap-8 md:gap-10 justify-items-center"
+      >
         {filteredProjects
           .sort((a, b) =>
             a.isOngoing
