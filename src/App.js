@@ -1,15 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import { Main, Project, Resume } from "./pages";
 import "./styles.css";
+import { useEffect } from "react";
 
-function App() {
+function Main() {
   useEffect(() => {
     window.location.replace("https://calebharris.vercel.app/")
-  
-   
-  }, [])
-  
-  return null
+
+  },[])
+}
+function App() {
+  return (
+    <Routes>
+      <Route index path="/" element={<Main />} />
+    </Routes>
+  );
 }
 
 export default App;
