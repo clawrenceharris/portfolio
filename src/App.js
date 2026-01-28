@@ -3,13 +3,13 @@ import { Main, Project, Resume } from "./pages";
 import "./styles.css";
 
 function App() {
-  return (
-    <Routes>
-      <Route index path="/" element={<Main />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/project/:id" element={<Project />} />
-    </Routes>
-  );
+  useEffect(() => {
+    window.location.replace("https://calebharris.vercel.app/")
+  
+   
+  }, [])
+  
+  return null
 }
 
 export default App;
